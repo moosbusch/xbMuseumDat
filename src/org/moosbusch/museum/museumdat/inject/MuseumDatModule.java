@@ -244,7 +244,8 @@ import de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor;
 import de.zib.museum.museumdat.WorkIDDocument;
 import de.zib.museum.museumdat.WorkIDDocument.WorkID;
 import org.apache.xmlbeans.XmlObject;
-import org.moosbusch.museum.museumdat.util.MuseumDatObjectFactory;
+import org.moosbusch.museum.museumdat.document.Document;
+import org.moosbusch.museum.museumdat.document.impl.DocumentImpl;
 
 /**
  *
@@ -282,6 +283,11 @@ public class MuseumDatModule extends AbstractModule {
 //        return MuseumDatObjectFactory.getInstance();
 //    }
 
+    @Provides
+    public Document createDocument() {
+        return new DocumentImpl();
+    }
+    
     @Provides
     public EncodinganalogAttribute createEncodingAnalogAttribute() {
         EncodinganalogAttribute result = EncodinganalogAttribute.Factory.newInstance();

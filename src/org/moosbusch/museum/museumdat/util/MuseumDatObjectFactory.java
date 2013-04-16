@@ -66,7 +66,7 @@ public class MuseumDatObjectFactory implements ObjectFactory {
     }
 
     @Override
-    public Object createObject(Class type) {
+    public final Object createObject(Class type) {
         return createMuseumDatObject(type);
     }
 

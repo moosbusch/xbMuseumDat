@@ -4,6 +4,7 @@
  */
 package org.moosbusch.museum.museumdat.document.spi;
 
+import com.google.inject.Inject;
 import de.zib.museum.museumdat.MuseumdatWrapDocument;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -16,6 +17,9 @@ import java.io.OutputStream;
 import java.net.URL;
 import org.apache.xmlbeans.XmlException;
 import org.moosbusch.museum.museumdat.document.Document;
+import org.moosbusch.museum.museumdat.inject.annotation.Language;
+import org.moosbusch.museum.museumdat.inject.annotation.LanguageEncoding;
+import org.moosbusch.museum.museumdat.inject.annotation.RelatedEncoding;
 import org.moosbusch.museum.museumdat.util.MuseumDatObjectFactory;
 
 /**
@@ -25,6 +29,15 @@ import org.moosbusch.museum.museumdat.util.MuseumDatObjectFactory;
 public abstract class AbstractDocument implements Document {
 
     private MuseumdatWrapDocument museumdatWrapDocument;
+    @Inject
+    @Language
+    private String language;
+    @Inject
+    @LanguageEncoding
+    private String languageEncoding;
+    @Inject
+    @RelatedEncoding
+    private String relatedEncoding;
 
     public AbstractDocument() {
         init();
@@ -89,4 +102,36 @@ public abstract class AbstractDocument implements Document {
         output.close();
     }
 
+    @Override
+    public String getLanguage() {
+        return language;
+    }
+
+    @Override
+    @Inject
+    public void setLanguage(@Language String language) {
+        this.language = language;
+    }
+
+    @Override
+    public String getLanguageEncoding() {
+        return languageEncoding;
+    }
+
+    @Override
+    @Inject
+    public void setDefaultLanguageEncoding(@LanguageEncoding String languageEncoding) {
+        this.languageEncoding = languageEncoding;
+    }
+
+    @Override
+    public String getDefaultRelatedEncoding() {
+        return relatedEncoding;
+    }
+
+    @Override
+    @Inject
+    public void setDefaultRelatedEncoding(@RelatedEncoding String relatedEncoding) {
+        this.relatedEncoding = relatedEncoding;
+    }
 }

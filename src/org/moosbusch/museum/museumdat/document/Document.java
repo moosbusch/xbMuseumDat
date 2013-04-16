@@ -38,4 +38,16 @@ public interface Document {
     public void saveDocument(OutputStream output) throws IOException;
 
     public void clearDocument();
+
+    public String getLanguage();
+
+    public void setLanguage(String lang);
+
+    public String getLanguageEncoding();
+
+    public void setDefaultLanguageEncoding(String langEncoding);
+
+    public String getDefaultRelatedEncoding();
+
+    public void setDefaultRelatedEncoding(String relEncoding);
 }
