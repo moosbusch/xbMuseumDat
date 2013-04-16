@@ -8,6 +8,8 @@
  */
 package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
 import org.moosbusch.museum.museumdat.inject.annotation.Language;
+import org.moosbusch.museum.museumdat.inject.annotation.LanguageEncoding;
+import org.moosbusch.museum.museumdat.inject.annotation.RelatedEncoding;
 /**
  * A document containing one museumdatWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -285,7 +287,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets the "relatedencoding" attribute
          */
-        @Inject(optional=true) public void setRelatedencoding(java.lang.String relatedencoding)
+        @Inject(optional=true) public void setRelatedencoding(@RelatedEncoding java.lang.String relatedencoding)
         {
             synchronized (monitor())
             {
@@ -377,7 +379,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets the "langencoding" attribute
          */
-        @Inject(optional=true) public void setLangencoding(java.lang.String langencoding)
+        @Inject(optional=true) public void setLangencoding(@LanguageEncoding java.lang.String langencoding)
         {
             synchronized (monitor())
             {

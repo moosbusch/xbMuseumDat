@@ -7,6 +7,8 @@
  * Automatically generated - do not modify.
  */
 package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.museumdat.inject.annotation.EncodingAnalog;
+import org.moosbusch.museum.museumdat.inject.annotation.Language;
 /**
  * A document containing one displayMaterialsTech(@http://museum.zib.de/museumdat) element.
  *
@@ -15,16 +17,16 @@ package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
 public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements de.zib.museum.museumdat.DisplayMaterialsTechDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public DisplayMaterialsTechDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName DISPLAYMATERIALSTECH$0 = 
+
+    private static final javax.xml.namespace.QName DISPLAYMATERIALSTECH$0 =
         new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "displayMaterialsTech");
-    
-    
+
+
     /**
      * Gets the "displayMaterialsTech" element
      */
@@ -42,7 +44,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
             return target;
         }
     }
-    
+
     /**
      * Sets the "displayMaterialsTech" element
      */
@@ -50,7 +52,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
     {
         generatedSetterHelperImpl(displayMaterialsTech, DISPLAYMATERIALSTECH$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "displayMaterialsTech" element
      */
@@ -72,25 +74,25 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
     public static class DisplayMaterialsTechImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements de.zib.museum.museumdat.DisplayMaterialsTechDocument.DisplayMaterialsTech
     {
         private static final long serialVersionUID = 1L;
-        
+
         public DisplayMaterialsTechImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected DisplayMaterialsTechImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName ENCODINGANALOG$0 = 
+
+        private static final javax.xml.namespace.QName ENCODINGANALOG$0 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$2 = 
+        private static final javax.xml.namespace.QName LABEL$2 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "label");
-        private static final javax.xml.namespace.QName LANG$4 = 
+        private static final javax.xml.namespace.QName LANG$4 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        
-        
+
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -108,7 +110,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -122,7 +124,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -134,11 +136,11 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return get_store().find_attribute_user(ENCODINGANALOG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        @Inject(optional=true) public void setEncodinganalog(@EncodingAnalog java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -152,7 +154,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -170,7 +172,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -182,7 +184,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 get_store().remove_attribute(ENCODINGANALOG$0);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -200,7 +202,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -214,7 +216,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -226,7 +228,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return get_store().find_attribute_user(LABEL$2) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -244,7 +246,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -262,7 +264,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -274,7 +276,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 get_store().remove_attribute(LABEL$2);
             }
         }
-        
+
         /**
          * Gets the "lang" attribute
          */
@@ -292,7 +294,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -306,7 +308,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -318,11 +320,11 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 return get_store().find_attribute_user(LANG$4) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        @Inject(optional=true) public void setLang(@Language java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -336,7 +338,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -354,7 +356,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */

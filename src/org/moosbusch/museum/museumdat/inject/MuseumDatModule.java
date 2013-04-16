@@ -280,10 +280,14 @@ public class MuseumDatModule extends AbstractModule {
 
     @Override
     protected void configure() {
-        binder().bind(String.class).annotatedWith(Language.class).toInstance(Document.DEFAULT_LANGUAGE);
-        binder().bind(String.class).annotatedWith(LanguageEncoding.class).toInstance(Document.DEFAULT_LANGUAGE);
-        binder().bind(String.class).annotatedWith(RelatedEncoding.class).toInstance(Document.DEFAULT_LANGUAGE);
-        binder().bind(String.class).annotatedWith(EncodingAnalog.class).toInstance(Document.DEFAULT_ENCODING_ANALOG);
+        binder().bind(String.class).annotatedWith(Language.class).toInstance(
+                Document.DEFAULT_LANGUAGE);
+        binder().bind(String.class).annotatedWith(LanguageEncoding.class).toInstance(
+                Document.DEFAULT_LANGUAGE_ENCODING);
+        binder().bind(String.class).annotatedWith(RelatedEncoding.class).toInstance(
+                Document.DEFAULT_RELATED_ENCODING);
+        binder().bind(String.class).annotatedWith(EncodingAnalog.class).toInstance(
+                Document.DEFAULT_ENCODING_ANALOG);
     }
 
     @Provides

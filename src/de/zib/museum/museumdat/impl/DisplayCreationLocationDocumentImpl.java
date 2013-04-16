@@ -7,6 +7,8 @@
  * Automatically generated - do not modify.
  */
 package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.museumdat.inject.annotation.EncodingAnalog;
+import org.moosbusch.museum.museumdat.inject.annotation.Language;
 /**
  * A document containing one displayCreationLocation(@http://museum.zib.de/museumdat) element.
  *
@@ -15,16 +17,16 @@ package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
 public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements de.zib.museum.museumdat.DisplayCreationLocationDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public DisplayCreationLocationDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName DISPLAYCREATIONLOCATION$0 = 
+
+    private static final javax.xml.namespace.QName DISPLAYCREATIONLOCATION$0 =
         new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "displayCreationLocation");
-    
-    
+
+
     /**
      * Gets the "displayCreationLocation" element
      */
@@ -42,7 +44,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
             return target;
         }
     }
-    
+
     /**
      * Sets the "displayCreationLocation" element
      */
@@ -50,7 +52,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
     {
         generatedSetterHelperImpl(displayCreationLocation, DISPLAYCREATIONLOCATION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "displayCreationLocation" element
      */
@@ -72,25 +74,25 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
     public static class DisplayCreationLocationImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements de.zib.museum.museumdat.DisplayCreationLocationDocument.DisplayCreationLocation
     {
         private static final long serialVersionUID = 1L;
-        
+
         public DisplayCreationLocationImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected DisplayCreationLocationImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName ENCODINGANALOG$0 = 
+
+        private static final javax.xml.namespace.QName ENCODINGANALOG$0 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$2 = 
+        private static final javax.xml.namespace.QName LABEL$2 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "label");
-        private static final javax.xml.namespace.QName LANG$4 = 
+        private static final javax.xml.namespace.QName LANG$4 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        
-        
+
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -108,7 +110,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -122,7 +124,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -134,11 +136,11 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return get_store().find_attribute_user(ENCODINGANALOG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        @Inject(optional=true) public void setEncodinganalog(@EncodingAnalog java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -152,7 +154,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -170,7 +172,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -182,7 +184,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 get_store().remove_attribute(ENCODINGANALOG$0);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -200,7 +202,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -214,7 +216,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -226,7 +228,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return get_store().find_attribute_user(LABEL$2) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -244,7 +246,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -262,7 +264,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -274,7 +276,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 get_store().remove_attribute(LABEL$2);
             }
         }
-        
+
         /**
          * Gets the "lang" attribute
          */
@@ -292,7 +294,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -306,7 +308,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -318,11 +320,11 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 return get_store().find_attribute_user(LANG$4) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        @Inject(optional=true) public void setLang(@Language java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -336,7 +338,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -354,7 +356,7 @@ public class DisplayCreationLocationDocumentImpl extends org.apache.xmlbeans.imp
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */
