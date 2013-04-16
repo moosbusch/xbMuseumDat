@@ -4,17 +4,13 @@
  */
 package org.moosbusch.museum.museumdat.document.impl;
 
-import de.zib.museum.museumdat.MuseumdatDocument.Museumdat;
-import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.util.Collection;
-import java.util.Collections;
 import org.apache.xmlbeans.XmlException;
+import org.moosbusch.museum.museumdat.document.Document;
 import org.moosbusch.museum.museumdat.document.spi.AbstractDocument;
-import org.moosbusch.museum.museumdat.util.MuseumDatObjectFactory;
 
 /**
  *
@@ -38,36 +34,23 @@ public class DocumentImpl extends AbstractDocument {
     }
 
     @Override
-    public void loadDocument(InputStream input) throws IOException, XmlException {
-        setMuseumdatWrapDocument(
-                MuseumDatObjectFactory.getInstance().loadMuseumDatWrapDocument(input));
+    protected String createRelatedEncoding() {
+        return Document.DEFAULT_RELATED_ENCODING;
     }
 
     @Override
-    public void saveDocument(URL url) throws IOException {
-        saveDocument(new BufferedOutputStream(
-                url.openConnection().getOutputStream()));
+    protected String createLanguageEncoding() {
+        return Document.DEFAULT_LANGUAGE_ENCODING;
     }
 
     @Override
-    public void clearDocument() {
-        setMuseumdatWrapDocument(
-                MuseumDatObjectFactory.getInstance().createMuseumDatWrapDocument());
+    protected String createLanguage() {
+        return Document.DEFAULT_LANGUAGE;
     }
 
     @Override
-    public void addMuseumdat(Museumdat museumdat) {
-        getMuseumdatWrapDocument().getMuseumdatWrap().getMuseumdatList().add(museumdat);
+    protected String createEncodingAnalog() {
+        return Document.DEFAULT_ENCODING_ANALOG;
     }
 
-    @Override
-    public void removeMuseumdat(Museumdat museumdat) {
-        getMuseumdatWrapDocument().getMuseumdatWrap().getMuseumdatList().remove(museumdat);
-    }
-
-    @Override
-    public Collection<Museumdat> getMuseumdats() {
-        return Collections.unmodifiableCollection(
-                getMuseumdatWrapDocument().getMuseumdatWrap().getMuseumdatList());
-    }
 }

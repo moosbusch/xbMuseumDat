@@ -6,7 +6,6 @@ package org.moosbusch.museum.museumdat.util;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.google.inject.Provides;
 import de.zib.museum.museumdat.MuseumdatWrapDocument;
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,19 +24,15 @@ public class MuseumDatObjectFactory implements ObjectFactory {
 
     public static final String MUSEUMDAT_NS_URI = "http://museum.zib.de/museumdat";
     public static final String MUSEUMDAT_NS_PREFIX = "museumdat";
-//    public static final String MUSEUMDAT_SCHEMA_URL =
-//            "/org/moosbusch/museum/schema/museumdat/museumdat-v1.0.xsd";
+    public static final String MUSEUMDAT_SCHEMA_URL =
+            "/org/moosbusch/museum/schema/museumdat/museumdat-v1.0.xsd";
 
-    protected MuseumDatObjectFactory() {
-    }
-
-    @Provides
-    public static MuseumDatObjectFactory getInstance() {
-        return MuseumDatFactoryHolder.INSTANCE;
+    public MuseumDatModule createModule() {
+        return new MuseumDatModule();
     }
 
     private Injector createMuseumDatInjector() {
-        return Guice.createInjector(new MuseumDatModule());
+        return Guice.createInjector(createModule());
     }
 
     @SuppressWarnings("unchecked")
@@ -70,8 +65,4 @@ public class MuseumDatObjectFactory implements ObjectFactory {
         return createMuseumDatObject(type);
     }
 
-    private static class MuseumDatFactoryHolder {
-
-        private static final MuseumDatObjectFactory INSTANCE = new MuseumDatObjectFactory();
-    }
 }

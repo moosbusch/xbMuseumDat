@@ -246,6 +246,10 @@ import de.zib.museum.museumdat.WorkIDDocument.WorkID;
 import org.apache.xmlbeans.XmlObject;
 import org.moosbusch.museum.museumdat.document.Document;
 import org.moosbusch.museum.museumdat.document.impl.DocumentImpl;
+import org.moosbusch.museum.museumdat.inject.annotation.EncodingAnalog;
+import org.moosbusch.museum.museumdat.inject.annotation.Language;
+import org.moosbusch.museum.museumdat.inject.annotation.LanguageEncoding;
+import org.moosbusch.museum.museumdat.inject.annotation.RelatedEncoding;
 
 /**
  *
@@ -276,18 +280,17 @@ public class MuseumDatModule extends AbstractModule {
 
     @Override
     protected void configure() {
+        binder().bind(String.class).annotatedWith(Language.class).toInstance(Document.DEFAULT_LANGUAGE);
+        binder().bind(String.class).annotatedWith(LanguageEncoding.class).toInstance(Document.DEFAULT_LANGUAGE);
+        binder().bind(String.class).annotatedWith(RelatedEncoding.class).toInstance(Document.DEFAULT_LANGUAGE);
+        binder().bind(String.class).annotatedWith(EncodingAnalog.class).toInstance(Document.DEFAULT_ENCODING_ANALOG);
     }
-
-//    @Provides
-//    public MuseumDatObjectFactory getObjectFactory() {
-//        return MuseumDatObjectFactory.getInstance();
-//    }
 
     @Provides
     public Document createDocument() {
         return new DocumentImpl();
     }
-    
+
     @Provides
     public EncodinganalogAttribute createEncodingAnalogAttribute() {
         EncodinganalogAttribute result = EncodinganalogAttribute.Factory.newInstance();

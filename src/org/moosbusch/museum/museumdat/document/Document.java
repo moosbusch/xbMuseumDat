@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 import java.util.Collection;
+import java.util.Locale;
 import org.apache.xmlbeans.XmlException;
 
 /**
@@ -18,6 +19,11 @@ import org.apache.xmlbeans.XmlException;
  * @author moosbusch
  */
 public interface Document {
+
+    public static final String DEFAULT_LANGUAGE = Locale.getDefault().toLanguageTag();
+    public static final String DEFAULT_LANGUAGE_ENCODING = "RFC3066";
+    public static final String DEFAULT_RELATED_ENCODING = "DC";
+    public static final String DEFAULT_ENCODING_ANALOG = "DC";
 
     public void addMuseumdat(Museumdat museumdat);
 
@@ -41,13 +47,9 @@ public interface Document {
 
     public String getLanguage();
 
-    public void setLanguage(String lang);
-
     public String getLanguageEncoding();
 
-    public void setDefaultLanguageEncoding(String langEncoding);
+    public String getRelatedEncoding();
 
-    public String getDefaultRelatedEncoding();
-
-    public void setDefaultRelatedEncoding(String relEncoding);
+    public String getEncodingAnalog();
 }
