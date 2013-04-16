@@ -7,6 +7,7 @@
  * Automatically generated - do not modify.
  */
 package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.museumdat.inject.annotation.Language;
 /**
  * A document containing one museumdatWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -15,16 +16,16 @@ package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
 public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements de.zib.museum.museumdat.MuseumdatWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public MuseumdatWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName MUSEUMDATWRAP$0 = 
+
+    private static final javax.xml.namespace.QName MUSEUMDATWRAP$0 =
         new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "museumdatWrap");
-    
-    
+
+
     /**
      * Gets the "museumdatWrap" element
      */
@@ -42,7 +43,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
             return target;
         }
     }
-    
+
     /**
      * Sets the "museumdatWrap" element
      */
@@ -50,7 +51,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
     {
         generatedSetterHelperImpl(museumdatWrap, MUSEUMDATWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "museumdatWrap" element
      */
@@ -72,22 +73,22 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
     public static class MuseumdatWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements de.zib.museum.museumdat.MuseumdatWrapDocument.MuseumdatWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public MuseumdatWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName MUSEUMDAT$0 = 
+
+        private static final javax.xml.namespace.QName MUSEUMDAT$0 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "museumdat");
-        private static final javax.xml.namespace.QName RELATEDENCODING$2 = 
+        private static final javax.xml.namespace.QName RELATEDENCODING$2 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "relatedencoding");
-        private static final javax.xml.namespace.QName LANGENCODING$4 = 
+        private static final javax.xml.namespace.QName LANGENCODING$4 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "langencoding");
-        private static final javax.xml.namespace.QName LANG$6 = 
+        private static final javax.xml.namespace.QName LANG$6 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        
-        
+
+
         /**
          * Gets a List of "museumdat" elements
          */
@@ -98,7 +99,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 @Override
                 public de.zib.museum.museumdat.MuseumdatDocument.Museumdat get(int i)
                     { return MuseumdatWrapImpl.this.getMuseumdatArray(i); }
-                
+
                 @Override
                 public de.zib.museum.museumdat.MuseumdatDocument.Museumdat set(int i, de.zib.museum.museumdat.MuseumdatDocument.Museumdat o)
                 {
@@ -106,11 +107,11 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                     MuseumdatWrapImpl.this.setMuseumdatArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, de.zib.museum.museumdat.MuseumdatDocument.Museumdat o)
                     { MuseumdatWrapImpl.this.insertNewMuseumdat(i).set(o); }
-                
+
                 @Override
                 public de.zib.museum.museumdat.MuseumdatDocument.Museumdat remove(int i)
                 {
@@ -118,20 +119,20 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                     MuseumdatWrapImpl.this.removeMuseumdat(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return MuseumdatWrapImpl.this.sizeOfMuseumdatArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new MuseumdatList();
             }
         }
-        
+
         /**
          * Gets array of all "museumdat" elements
          * @deprecated
@@ -149,7 +150,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "museumdat" element
          */
@@ -167,7 +168,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "museumdat" element
          */
@@ -179,7 +180,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return get_store().count_elements(MUSEUMDAT$0);
             }
         }
-        
+
         /**
          * Sets array of all "museumdat" element  WARNING: This method is not atomicaly synchronized.
          */
@@ -188,7 +189,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
             check_orphaned();
             arraySetterHelper(museumdatArray, MUSEUMDAT$0);
         }
-        
+
         /**
          * Sets ith "museumdat" element
          */
@@ -196,7 +197,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
         {
             generatedSetterHelperImpl(museumdat, MUSEUMDAT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "museumdat" element
          */
@@ -210,7 +211,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "museumdat" element
          */
@@ -224,7 +225,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "museumdat" element
          */
@@ -236,7 +237,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 get_store().remove_element(MUSEUMDAT$0, i);
             }
         }
-        
+
         /**
          * Gets the "relatedencoding" attribute
          */
@@ -254,7 +255,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "relatedencoding" attribute
          */
@@ -268,7 +269,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target;
             }
         }
-        
+
         /**
          * True if has "relatedencoding" attribute
          */
@@ -280,7 +281,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return get_store().find_attribute_user(RELATEDENCODING$2) != null;
             }
         }
-        
+
         /**
          * Sets the "relatedencoding" attribute
          */
@@ -298,7 +299,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 target.setStringValue(relatedencoding);
             }
         }
-        
+
         /**
          * Sets (as xml) the "relatedencoding" attribute
          */
@@ -316,7 +317,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 target.set(relatedencoding);
             }
         }
-        
+
         /**
          * Unsets the "relatedencoding" attribute
          */
@@ -328,7 +329,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 get_store().remove_attribute(RELATEDENCODING$2);
             }
         }
-        
+
         /**
          * Gets the "langencoding" attribute
          */
@@ -346,7 +347,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "langencoding" attribute
          */
@@ -360,7 +361,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target;
             }
         }
-        
+
         /**
          * True if has "langencoding" attribute
          */
@@ -372,7 +373,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return get_store().find_attribute_user(LANGENCODING$4) != null;
             }
         }
-        
+
         /**
          * Sets the "langencoding" attribute
          */
@@ -390,7 +391,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 target.setStringValue(langencoding);
             }
         }
-        
+
         /**
          * Sets (as xml) the "langencoding" attribute
          */
@@ -408,7 +409,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 target.set(langencoding);
             }
         }
-        
+
         /**
          * Unsets the "langencoding" attribute
          */
@@ -420,7 +421,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 get_store().remove_attribute(LANGENCODING$4);
             }
         }
-        
+
         /**
          * Gets the "lang" attribute
          */
@@ -438,7 +439,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -452,7 +453,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -464,11 +465,11 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 return get_store().find_attribute_user(LANG$6) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        @Inject(optional=true) public void setLang(@Language java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -482,7 +483,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -500,7 +501,7 @@ public class MuseumdatWrapDocumentImpl extends org.apache.xmlbeans.impl.values.X
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */
