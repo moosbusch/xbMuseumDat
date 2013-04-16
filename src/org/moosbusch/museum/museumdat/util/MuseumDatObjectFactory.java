@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.moosbusch.museum.util;
+package org.moosbusch.museum.museumdat.util;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 import org.apache.xmlbeans.ObjectFactory;
 import org.apache.xmlbeans.XmlException;
 import org.apache.xmlbeans.XmlOptions;
-import org.moosbusch.museum.inject.MuseumDatModule;
+import org.moosbusch.museum.museumdat.inject.MuseumDatModule;
 
 /**
  *
@@ -49,15 +49,15 @@ public class MuseumDatObjectFactory implements ObjectFactory {
         return createMuseumDatObject(MuseumdatWrapDocument.class);
     }
 
-    public MuseumdatWrapDocument loadMuseumDatDocument(InputStream in)
+    public MuseumdatWrapDocument loadMuseumDatWrapDocument(InputStream in)
             throws IOException, XmlException {
         return MuseumdatWrapDocument.Factory.parse(in);
     }
 
-    public void saveMuseumDatDocument(MuseumdatWrapDocument museumdatWrapDocument,
+    public void saveMuseumDatWrapDocument(MuseumdatWrapDocument museumdatWrapDocument,
             OutputStream out) throws IOException {
         XmlOptions xmlOptions = new XmlOptions();
-        HashMap<String, String> namespaceMap = new HashMap<>();
+        HashMap<String, String> namespaceMap = new HashMap<String, String>();
         namespaceMap.put(MUSEUMDAT_NS_URI, MUSEUMDAT_NS_PREFIX);
         xmlOptions.setSaveSuggestedPrefixes(namespaceMap);
         xmlOptions.setSavePrettyPrint();

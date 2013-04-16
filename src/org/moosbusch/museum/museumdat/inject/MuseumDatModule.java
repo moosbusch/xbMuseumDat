@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.moosbusch.museum.inject;
+package org.moosbusch.museum.museumdat.inject;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
@@ -244,7 +244,7 @@ import de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor;
 import de.zib.museum.museumdat.WorkIDDocument;
 import de.zib.museum.museumdat.WorkIDDocument.WorkID;
 import org.apache.xmlbeans.XmlObject;
-import org.moosbusch.museum.util.MuseumDatObjectFactory;
+import org.moosbusch.museum.museumdat.util.MuseumDatObjectFactory;
 
 /**
  *
