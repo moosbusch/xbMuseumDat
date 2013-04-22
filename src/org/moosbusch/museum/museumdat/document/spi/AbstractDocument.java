@@ -11,7 +11,11 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Collection;
 import java.util.Collections;
+import org.apache.xmlbeans.XmlCursor;
 import org.apache.xmlbeans.XmlException;
+import org.apache.xmlbeans.XmlObject;
+import org.apache.xmlbeans.XmlOptions;
+import org.apache.xmlbeans.impl.store.Path;
 import org.moosbusch.museum.document.AbstractMuseumXmlDocument;
 import org.moosbusch.museum.museumdat.document.Document;
 import org.moosbusch.museum.museumdat.util.MuseumDatObjectFactory;
@@ -104,6 +108,18 @@ public abstract class AbstractDocument<T extends MuseumDatObjectFactory>
     public Collection<MuseumdatDocument.Museumdat> getMuseumdats() {
         return Collections.unmodifiableCollection(
                 getMuseumdatWrapDocument().getMuseumdatWrap().getMuseumdatList());
+    }
+
+    @Override
+    public XmlObject getObjectByXPath(String xpath) {
+        XmlOptions options = new XmlOptions();
+        options.put(Path.PATH_DELEGATE_INTERFACE, PATH_DELEGATE_INTERFACE_CLASS);
+        XmlCursor cur = getMuseumdatWrapDocument().getMuseumdatWrap().newCursor();
+        cur.selectPath(xpath, options);
+        XmlObject result = cur.getObject();
+        cur.dispose();
+
+        return result;
     }
 
     @Override
