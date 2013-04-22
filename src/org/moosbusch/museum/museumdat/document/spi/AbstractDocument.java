@@ -12,6 +12,7 @@ import java.io.OutputStream;
 import java.util.Collection;
 import java.util.Collections;
 import org.apache.xmlbeans.XmlException;
+import org.moosbusch.museum.document.AbstractMuseumXmlDocument;
 import org.moosbusch.museum.museumdat.document.Document;
 import org.moosbusch.museum.museumdat.util.MuseumDatObjectFactory;
 
@@ -19,36 +20,26 @@ import org.moosbusch.museum.museumdat.util.MuseumDatObjectFactory;
  *
  * @author moosbusch
  */
-public abstract class AbstractDocument implements Document {
+public abstract class AbstractDocument<T extends MuseumDatObjectFactory>
+    extends AbstractMuseumXmlDocument<T> implements Document<T> {
 
     private MuseumdatWrapDocument museumdatWrapDocument;
-    private final String language;
     private final String languageEncoding;
     private final String relatedEncoding;
     private final String encodingAnalog;
 
     public AbstractDocument() {
-        this.language = initLanguage();
         this.languageEncoding = initLanguageEncoding();
         this.relatedEncoding = initRelatedEncoding();
         this.encodingAnalog = initEncodingAnalog();
-        init();
     }
 
-    public AbstractDocument(InputStream in) throws IOException, XmlException {
-        this.language = initLanguage();
+    public AbstractDocument(InputStream in)
+            throws IOException, XmlException {
+        super(in);
         this.languageEncoding = initLanguageEncoding();
         this.relatedEncoding = initRelatedEncoding();
         this.encodingAnalog = initEncodingAnalog();
-        init(in);
-    }
-
-    private void init() {
-        clearDocument();
-    }
-
-    private void init(InputStream in) throws IOException, XmlException {
-        loadDocument(in);
     }
 
     private String initRelatedEncoding() {
@@ -57,10 +48,6 @@ public abstract class AbstractDocument implements Document {
 
     private String initLanguageEncoding() {
         return createLanguageEncoding();
-    }
-
-    private String initLanguage() {
-        return createLanguage();
     }
 
     private String initEncodingAnalog() {
@@ -117,11 +104,6 @@ public abstract class AbstractDocument implements Document {
     public Collection<MuseumdatDocument.Museumdat> getMuseumdats() {
         return Collections.unmodifiableCollection(
                 getMuseumdatWrapDocument().getMuseumdatWrap().getMuseumdatList());
-    }
-
-    @Override
-    public String getLanguage() {
-        return language;
     }
 
     @Override
