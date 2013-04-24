@@ -20,8 +20,8 @@ Google (http://www.google.com/).
     [ASL 2.0, http://www.apache.org/licenses/]
 
 This product includes software developed by
-Fachgruppe Dokumentation des Deutschen Museumsbundes (DMB)
-(http://www.museumsbund.de/cms/index.php?id=342&L=0).
+Fachgruppe Dokumentation des Deutschen Museumsbundes (http://museumdat.org),
+(http://www.museumsbund.de/cms/index.php?id=342&L=0) .
 
     http://museum.zib.de/museumdat/museumdat-v1.0.xsd
 
