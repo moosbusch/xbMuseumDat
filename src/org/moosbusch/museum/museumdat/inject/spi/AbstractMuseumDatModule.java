@@ -57,6 +57,7 @@ public abstract class AbstractMuseumDatModule extends AbstractMuseumXmlModule im
         return relatedEncoding;
     }
 
+    @Override
     public String getEncodingAnalog() {
         return encodingAnalog;
     }
