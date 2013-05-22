@@ -7,6 +7,8 @@
  * Automatically generated - do not modify.
  */
 package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.inject.annotation.Language;
+import org.moosbusch.museum.museumdat.inject.annotation.EncodingAnalog;
 /**
  * A document containing one recordType(@http://museum.zib.de/museumdat) element.
  *
@@ -15,16 +17,16 @@ package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
 public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements de.zib.museum.museumdat.RecordTypeDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public RecordTypeDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName RECORDTYPE$0 = 
+
+    private static final javax.xml.namespace.QName RECORDTYPE$0 =
         new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "recordType");
-    
-    
+
+
     /**
      * Gets the "recordType" element
      */
@@ -42,7 +44,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
             return target;
         }
     }
-    
+
     /**
      * Sets the "recordType" element
      */
@@ -50,7 +52,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     {
         generatedSetterHelperImpl(recordType, RECORDTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "recordType" element
      */
@@ -72,25 +74,25 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     public static class RecordTypeImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements de.zib.museum.museumdat.RecordTypeDocument.RecordType
     {
         private static final long serialVersionUID = 1L;
-        
+
         public RecordTypeImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType, true);
         }
-        
+
         protected RecordTypeImpl(org.apache.xmlbeans.SchemaType sType, boolean b)
         {
             super(sType, b);
         }
-        
-        private static final javax.xml.namespace.QName ENCODINGANALOG$0 = 
+
+        private static final javax.xml.namespace.QName ENCODINGANALOG$0 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "encodinganalog");
-        private static final javax.xml.namespace.QName LABEL$2 = 
+        private static final javax.xml.namespace.QName LABEL$2 =
             new javax.xml.namespace.QName("http://museum.zib.de/museumdat", "label");
-        private static final javax.xml.namespace.QName LANG$4 = 
+        private static final javax.xml.namespace.QName LANG$4 =
             new javax.xml.namespace.QName("http://www.w3.org/XML/1998/namespace", "lang");
-        
-        
+
+
         /**
          * Gets the "encodinganalog" attribute
          */
@@ -108,7 +110,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "encodinganalog" attribute
          */
@@ -122,7 +124,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "encodinganalog" attribute
          */
@@ -134,11 +136,11 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(ENCODINGANALOG$0) != null;
             }
         }
-        
+
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        @Inject(optional=true) public void setEncodinganalog(@EncodingAnalog java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -152,7 +154,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setStringValue(encodinganalog);
             }
         }
-        
+
         /**
          * Sets (as xml) the "encodinganalog" attribute
          */
@@ -170,7 +172,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(encodinganalog);
             }
         }
-        
+
         /**
          * Unsets the "encodinganalog" attribute
          */
@@ -182,7 +184,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 get_store().remove_attribute(ENCODINGANALOG$0);
             }
         }
-        
+
         /**
          * Gets the "label" attribute
          */
@@ -200,7 +202,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "label" attribute
          */
@@ -214,7 +216,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "label" attribute
          */
@@ -226,7 +228,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(LABEL$2) != null;
             }
         }
-        
+
         /**
          * Sets the "label" attribute
          */
@@ -244,7 +246,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setStringValue(label);
             }
         }
-        
+
         /**
          * Sets (as xml) the "label" attribute
          */
@@ -262,7 +264,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(label);
             }
         }
-        
+
         /**
          * Unsets the "label" attribute
          */
@@ -274,7 +276,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 get_store().remove_attribute(LABEL$2);
             }
         }
-        
+
         /**
          * Gets the "lang" attribute
          */
@@ -292,7 +294,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target.getStringValue();
             }
         }
-        
+
         /**
          * Gets (as xml) the "lang" attribute
          */
@@ -306,7 +308,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return target;
             }
         }
-        
+
         /**
          * True if has "lang" attribute
          */
@@ -318,11 +320,11 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 return get_store().find_attribute_user(LANG$4) != null;
             }
         }
-        
+
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        @Inject(optional=true) public void setLang(@Language java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -336,7 +338,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.setStringValue(lang);
             }
         }
-        
+
         /**
          * Sets (as xml) the "lang" attribute
          */
@@ -354,7 +356,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
                 target.set(lang);
             }
         }
-        
+
         /**
          * Unsets the "lang" attribute
          */

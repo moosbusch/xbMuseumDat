@@ -7,8 +7,8 @@
  * Automatically generated - do not modify.
  */
 package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+import org.moosbusch.museum.inject.annotation.Language;
 import org.moosbusch.museum.museumdat.inject.annotation.EncodingAnalog;
-import org.moosbusch.museum.museumdat.inject.annotation.Language;
 /**
  * A document containing one displayCreationDate(@http://museum.zib.de/museumdat) element.
  *

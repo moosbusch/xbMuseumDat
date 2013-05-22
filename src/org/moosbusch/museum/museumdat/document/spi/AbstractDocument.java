@@ -31,6 +31,9 @@ public abstract class AbstractDocument<T extends MuseumDatObjectFactory>
         super(in);
     }
 
+    protected abstract void addSchemaLocation(MuseumdatWrapDocument museumDatWrapDocument);
+
+    @Override
     public MuseumdatWrap getRootElement() {
         synchronized (getRootWrapperElement().monitor()) {
             return getRootWrapperElement().getMuseumdatWrap();
