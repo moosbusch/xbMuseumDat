@@ -20,8 +20,7 @@ import org.moosbusch.museum.museumdat.inject.impl.MuseumDatObjectFactory;
  * @author moosbusch
  */
 public abstract class AbstractDocument<T extends MuseumDatObjectFactory>
-        extends AbstractMuseumXmlDocument<MuseumdatWrapDocument,T, MuseumdatWrap,
-        Museumdat> implements Document<T> {
+        extends AbstractMuseumXmlDocument<MuseumdatWrapDocument, T, MuseumdatWrap, Museumdat> implements Document<T> {
 
     public AbstractDocument() {
     }
@@ -35,15 +34,11 @@ public abstract class AbstractDocument<T extends MuseumDatObjectFactory>
 
     @Override
     public MuseumdatWrap getRootElement() {
-        synchronized (getRootWrapperElement().monitor()) {
-            return getRootWrapperElement().getMuseumdatWrap();
-        }
+        return getRootWrapperElement().getMuseumdatWrap();
     }
 
     @Override
     public Collection<Museumdat> getItems() {
-        synchronized (getRootWrapperElement().monitor()) {
-            return getRootWrapperElement().getMuseumdatWrap().getMuseumdatList();
-        }
+        return getRootWrapperElement().getMuseumdatWrap().getMuseumdatList();
     }
 }
