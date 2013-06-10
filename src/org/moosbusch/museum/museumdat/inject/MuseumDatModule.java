@@ -240,7 +240,7 @@ import de.zib.museum.museumdat.VitalDatesActorDocument;
 import de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor;
 import de.zib.museum.museumdat.WorkIDDocument;
 import de.zib.museum.museumdat.WorkIDDocument.WorkID;
-import org.moosbusch.museum.inject.MuseumXmlModule;
+import org.moosbusch.museum.inject.XmlModule;
 import org.moosbusch.museum.museumdat.document.Document;
 import org.moosbusch.museum.museumdat.inject.impl.MuseumDatObjectFactory;
 
@@ -248,7 +248,7 @@ import org.moosbusch.museum.museumdat.inject.impl.MuseumDatObjectFactory;
  *
  * @author moosbusch
  */
-public interface MuseumDatModule extends MuseumXmlModule {
+public interface MuseumDatModule extends XmlModule {
 
     public String getLanguageEncoding();
 

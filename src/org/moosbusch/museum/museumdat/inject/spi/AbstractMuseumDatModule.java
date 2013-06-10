@@ -1,26 +1,24 @@
 /*
- * 
+ *
  *
  */
 package org.moosbusch.museum.museumdat.inject.spi;
 
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.inject.spi.AbstractMuseumXmlModule;
+import org.moosbusch.museum.document.XmlDocument;
+import org.moosbusch.museum.inject.spi.AbstractXmlModule;
 import org.moosbusch.museum.museumdat.inject.MuseumDatModule;
-import org.moosbusch.museum.museumdat.inject.impl.MuseumDatObjectFactory;
 
 /**
  *
  * @author moosbusch
  */
-public abstract class AbstractMuseumDatModule extends AbstractMuseumXmlModule implements MuseumDatModule {
+public abstract class AbstractMuseumDatModule extends AbstractXmlModule implements MuseumDatModule {
 
     private final String languageEncoding;
     private final String relatedEncoding;
     private final String encodingAnalog;
 
-    public AbstractMuseumDatModule(MuseumDatObjectFactory objFactory) {
-        super(objFactory);
+    public AbstractMuseumDatModule() {
         this.languageEncoding = initLanguageEncoding();
         this.relatedEncoding = initRelatedEncoding();
         this.encodingAnalog = initEncodingAnalog();
@@ -46,12 +44,7 @@ public abstract class AbstractMuseumDatModule extends AbstractMuseumXmlModule im
 
     @Override
     protected String createLanguage() {
-        return MuseumXmlDocument.DEFAULT_LANGUAGE;
-    }
-
-    @Override
-    public MuseumDatObjectFactory getObjectFactory() {
-        return (MuseumDatObjectFactory) super.getObjectFactory();
+        return XmlDocument.DEFAULT_LANGUAGE;
     }
 
     @Override

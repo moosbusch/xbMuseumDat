@@ -7,7 +7,7 @@ package org.moosbusch.museum.museumdat.document;
 import de.zib.museum.museumdat.MuseumdatDocument.Museumdat;
 import de.zib.museum.museumdat.MuseumdatWrapDocument;
 import de.zib.museum.museumdat.MuseumdatWrapDocument.MuseumdatWrap;
-import org.moosbusch.museum.document.MuseumXmlDocument;
+import org.moosbusch.museum.document.XmlDocument;
 import org.moosbusch.museum.museumdat.inject.impl.MuseumDatObjectFactory;
 
 /**
@@ -15,7 +15,7 @@ import org.moosbusch.museum.museumdat.inject.impl.MuseumDatObjectFactory;
  * @author moosbusch
  */
 public interface Document<T extends MuseumDatObjectFactory>
-    extends MuseumXmlDocument<MuseumdatWrapDocument, T, MuseumdatWrap, Museumdat> {
+    extends XmlDocument<MuseumdatWrapDocument, T, MuseumdatWrap, Museumdat> {
 
     public static final String MUSEUMDAT_NS_URI = "http://museum.zib.de/museumdat";
     public static final String MUSEUMDAT_NS_PREFIX = "museumdat";

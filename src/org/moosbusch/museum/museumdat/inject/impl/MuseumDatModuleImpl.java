@@ -240,7 +240,7 @@ import de.zib.museum.museumdat.VitalDatesActorDocument;
 import de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor;
 import de.zib.museum.museumdat.WorkIDDocument;
 import de.zib.museum.museumdat.WorkIDDocument.WorkID;
-import org.moosbusch.museum.document.MuseumXmlDocument;
+import org.moosbusch.museum.document.XmlDocument;
 import org.moosbusch.museum.inject.annotation.Language;
 import org.moosbusch.museum.museumdat.document.Document;
 import org.moosbusch.museum.museumdat.document.impl.DocumentImpl;
@@ -254,10 +254,6 @@ import org.moosbusch.museum.museumdat.inject.spi.AbstractMuseumDatModule;
  * @author moosbusch
  */
 public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
-
-    public MuseumDatModuleImpl(MuseumDatObjectFactory objFactory) {
-        super(objFactory);
-    }
 
     @Override
     protected void configureImpl() {
@@ -279,7 +275,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
 
     @Override
     protected String createRelatedEncoding() {
-        return MuseumXmlDocument.DEFAULT_RELATED_ENCODING;
+        return XmlDocument.DEFAULT_RELATED_ENCODING;
     }
 
     @Override
@@ -296,7 +292,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public EncodinganalogAttribute createEncodingAnalogAttribute() {
         EncodinganalogAttribute result = EncodinganalogAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -304,7 +299,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public GeographicalEntityAttribute createGeographicalEntityAttribute() {
         GeographicalEntityAttribute result = GeographicalEntityAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -312,7 +306,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ImportedAttribute createImportedAttribute() {
         ImportedAttribute result = ImportedAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -320,7 +313,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LabelAttribute createLabelAttribute() {
         LabelAttribute result = LabelAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -328,7 +320,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LangAttribute createLangAttribute() {
         LangAttribute result = LangAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -336,7 +327,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LinkschemeAttribute createLinkschemeAttribute() {
         LinkschemeAttribute result = LinkschemeAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -344,7 +334,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LocIDAttribute createLocIDAttribute() {
         LocIDAttribute result = LocIDAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -352,7 +341,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LocIDtypeAttribute createLocIDTypeAttribute() {
         LocIDtypeAttribute result = LocIDtypeAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -360,7 +348,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TermsourceAttribute createTermSourceAttribute() {
         TermsourceAttribute result = TermsourceAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -368,7 +355,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TermsourceIDAttribute createTermSourceIDAttribute() {
         TermsourceIDAttribute result = TermsourceIDAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -376,7 +362,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public PoliticalEntityAttribute createPoliticalEntityAttribute() {
         PoliticalEntityAttribute result = PoliticalEntityAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -384,7 +369,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TypeAttribute createTypeAttribute() {
         TypeAttribute result = TypeAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -392,7 +376,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public PrefAttribute createPrefAttribute() {
         PrefAttribute result = PrefAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -400,7 +383,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ObjectWorkTypeDocument createObjectWorkTypeDocument() {
         ObjectWorkTypeDocument result = ObjectWorkTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -408,7 +390,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ObjectWorkType createObjectWorkType() {
         ObjectWorkType result = ObjectWorkTypeDocument.ObjectWorkType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -416,7 +397,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RepositoryLocationNameDocument createRepositoryLocationNameDocument() {
         RepositoryLocationNameDocument result = RepositoryLocationNameDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -424,7 +404,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RepositoryLocationName createRepositoryLocationName() {
         RepositoryLocationName result = RepositoryLocationNameDocument.RepositoryLocationName.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -432,7 +411,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LinkResourceDocument createLinkResourceDocument() {
         LinkResourceDocument result = LinkResourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -440,7 +418,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LinkResource createLinkResource() {
         LinkResource result = LinkResourceDocument.LinkResource.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -448,7 +425,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public GenderActorDocument createGenderActorDocument() {
         GenderActorDocument result = GenderActorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -456,7 +432,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public GenderActor createGenderActor() {
         GenderActor result = GenderActorDocument.GenderActor.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -464,7 +439,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingDatesDocument createIndexingDatesDocument() {
         IndexingDatesDocument result = IndexingDatesDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -472,7 +446,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingDates createIndexingDates() {
         IndexingDates result = IndexingDatesDocument.IndexingDates.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -480,7 +453,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public EarliestDateDocument createEarliestDateDocument() {
         EarliestDateDocument result = EarliestDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -488,7 +460,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public EarliestDate createEarliestDate() {
         EarliestDate result = EarliestDateDocument.EarliestDate.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -496,7 +467,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LatestDateDocument createLatestDateDocument() {
         LatestDateDocument result = LatestDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -504,7 +474,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LatestDate createLatestDate() {
         LatestDate result = LatestDateDocument.LatestDate.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -512,7 +481,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public MeasurementsSetDocument createMeasurementsSetDocument() {
         MeasurementsSetDocument result = MeasurementsSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -520,7 +488,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public MeasurementsSet createMeasurementsSet() {
         MeasurementsSet result = MeasurementsSetDocument.MeasurementsSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -528,7 +495,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceMaterialsTechDocument createSourceMaterialsTechDocument() {
         SourceMaterialsTechDocument result = SourceMaterialsTechDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -536,7 +502,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceMaterialsTech createSourceMaterialsTech() {
         SourceMaterialsTech result = SourceMaterialsTechDocument.SourceMaterialsTech.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -544,7 +509,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NationalityActorDocument createNationalityActorDocument() {
         NationalityActorDocument result = NationalityActorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -552,7 +516,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NationalityActor createNationalityActor() {
         NationalityActor result = NationalityActorDocument.NationalityActor.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -560,7 +523,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelatedWorkRelTypeDocument createRelatedWorkRelTypeDocument() {
         RelatedWorkRelTypeDocument result = RelatedWorkRelTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -568,7 +530,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelatedWorkRelType createRelatedWorkRelType() {
         RelatedWorkRelType result = RelatedWorkRelTypeDocument.RelatedWorkRelType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -576,7 +537,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceWrapDocument createResourceWrapDocument() {
         ResourceWrapDocument result = ResourceWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -584,7 +544,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceWrap createResourceWrap() {
         ResourceWrap result = ResourceWrapDocument.ResourceWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -592,7 +551,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceSetDocument createResourceSetDocument() {
         ResourceSetDocument result = ResourceSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -600,7 +558,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceSet createResourceSet() {
         ResourceSet result = ResourceSetDocument.ResourceSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -608,7 +565,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceIDDocument createResourceIDDocument() {
         ResourceIDDocument result = ResourceIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -616,7 +572,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceID createResourceID() {
         ResourceID result = ResourceIDDocument.ResourceID.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -624,7 +579,6 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceRelTypeDocument createResourceRelTypeDocument() {
         ResourceRelTypeDocument result = ResourceRelTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -632,7 +586,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceRelType createResourceRelType() {
         ResourceRelType result = ResourceRelTypeDocument.ResourceRelType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -640,7 +594,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceTypeDocument createResourceTypeDocument() {
         ResourceTypeDocument result = ResourceTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -648,7 +602,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceType createResourceType() {
         ResourceType result = ResourceTypeDocument.ResourceType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -656,7 +610,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RightsResourceDocument createRightsResourceDocument() {
         RightsResourceDocument result = RightsResourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -664,7 +618,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RightsResource createRightsResource() {
         RightsResource result = RightsResourceDocument.RightsResource.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -672,7 +626,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceViewDescriptionDocument createResourceViewDescriptionDocument() {
         ResourceViewDescriptionDocument result = ResourceViewDescriptionDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -680,7 +634,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceViewDescription createResourceViewDescription() {
         ResourceViewDescription result = ResourceViewDescriptionDocument.ResourceViewDescription.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -688,7 +642,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceViewTypeDocument createResourceViewTypeDocument() {
         ResourceViewTypeDocument result = ResourceViewTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -696,7 +650,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceViewType createResourceViewType() {
         ResourceViewType result = ResourceViewTypeDocument.ResourceViewType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -704,7 +658,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceViewSubjectTermDocument createResourceViewSubjectTermDocument() {
         ResourceViewSubjectTermDocument result = ResourceViewSubjectTermDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -712,7 +666,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceViewSubjectTerm createResourceViewSubjectTerm() {
         ResourceViewSubjectTerm result = ResourceViewSubjectTermDocument.ResourceViewSubjectTerm.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -720,7 +674,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceViewDateDocument createResourceViewDateDocument() {
         ResourceViewDateDocument result = ResourceViewDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -728,7 +682,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceViewDate createResourceViewDate() {
         ResourceViewDate result = ResourceViewDateDocument.ResourceViewDate.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -736,7 +690,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceSourceDocument createResourceSourceDocument() {
         ResourceSourceDocument result = ResourceSourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -744,7 +698,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceSource createResourceSource() {
         ResourceSource result = ResourceSourceDocument.ResourceSource.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -752,7 +706,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LinkRelatedResourceDocument createLinkRelatedResourceDocument() {
         LinkRelatedResourceDocument result = LinkRelatedResourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -760,7 +714,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LinkRelatedResource createLinkRelatedResource() {
         LinkRelatedResource result = LinkRelatedResourceDocument.LinkRelatedResource.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -768,7 +722,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelatedResourceRelTypeDocument createRelatedResourceRelTypeDocument() {
         RelatedResourceRelTypeDocument result = RelatedResourceRelTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -776,7 +730,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelatedResourceRelType createRelatedResourceRelType() {
         RelatedResourceRelType result = RelatedResourceRelTypeDocument.RelatedResourceRelType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -784,7 +738,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LabelRelatedResourceDocument createLabelRelatedResourceDocument() {
         LabelRelatedResourceDocument result = LabelRelatedResourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -792,7 +746,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LabelRelatedResource createLabelRelatedResource() {
         LabelRelatedResource result = LabelRelatedResourceDocument.LabelRelatedResource.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -800,7 +754,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceMetadataLocDocument createResourceMetadataLocDocument() {
         ResourceMetadataLocDocument result = ResourceMetadataLocDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -808,7 +762,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ResourceMetadataLoc createResourceMetadataLoc() {
         ResourceMetadataLoc result = ResourceMetadataLocDocument.ResourceMetadataLoc.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -816,7 +770,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TermMaterialsTechDocument createTermMaterialsTechDocument() {
         TermMaterialsTechDocument result = TermMaterialsTechDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -824,7 +778,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TermMaterialsTech createTermMaterialsTech() {
         TermMaterialsTech result = TermMaterialsTechDocument.TermMaterialsTech.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -832,7 +786,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingSubjectSetDocument createIndexingSubjectSetDocument() {
         IndexingSubjectSetDocument result = IndexingSubjectSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -840,7 +794,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingSubjectSet createIndexingSubjectSet() {
         IndexingSubjectSet result = IndexingSubjectSetDocument.IndexingSubjectSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -848,7 +802,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ExtentSubjectDocument createExtentSubjectDocument() {
         ExtentSubjectDocument result = ExtentSubjectDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -856,7 +810,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ExtentSubject createExtentSubject() {
         ExtentSubject result = ExtentSubjectDocument.ExtentSubject.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -864,7 +818,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SubjectTermDocument createSubjectTermDocument() {
         SubjectTermDocument result = SubjectTermDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -872,7 +826,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SubjectTerm createSubjectTerm() {
         SubjectTerm result = SubjectTermDocument.SubjectTerm.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -880,7 +834,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayCreatorDocument createDisplayCreatorDocument() {
         DisplayCreatorDocument result = DisplayCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -888,7 +842,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayCreator createDisplayCreator() {
         DisplayCreator result = DisplayCreatorDocument.DisplayCreator.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -896,7 +850,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ExtentMeasurementsDocument createExtentMeasurementsDocument() {
         ExtentMeasurementsDocument result = ExtentMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -904,7 +858,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ExtentMeasurements createExtentMeasurements() {
         ExtentMeasurements result = ExtentMeasurementsDocument.ExtentMeasurements.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -912,7 +866,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ExtentMaterialsTechDocument createExtentMaterialsTechDocument() {
         ExtentMaterialsTechDocument result = ExtentMaterialsTechDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -920,7 +874,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ExtentMaterialsTech createExtentMaterialsTech() {
         ExtentMaterialsTech result = ExtentMaterialsTechDocument.ExtentMaterialsTech.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -928,7 +882,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ShapeMeasurementsDocument createShapeMeasurementsDocument() {
         ShapeMeasurementsDocument result = ShapeMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -936,7 +890,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ShapeMeasurements createShapeMeasurements() {
         ShapeMeasurements result = ShapeMeasurementsDocument.ShapeMeasurements.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -944,7 +898,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RepositoryWrapDocument createRepositoryWrapDocument() {
         RepositoryWrapDocument result = RepositoryWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -952,7 +906,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RepositoryWrap createRepositoryWrap() {
         RepositoryWrap result = RepositoryWrapDocument.RepositoryWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -960,7 +914,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RepositorySetDocument createRepositorySetDocument() {
         RepositorySetDocument result = RepositorySetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -968,7 +922,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RepositorySet createRepositorySet() {
         RepositorySet result = RepositorySetDocument.RepositorySet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -976,7 +930,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RepositoryNameDocument createRepositoryNameDocument() {
         RepositoryNameDocument result = RepositoryNameDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -984,7 +938,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RepositoryName createRepositoryName() {
         RepositoryName result = RepositoryNameDocument.RepositoryName.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -992,7 +946,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public WorkIDDocument createWorkIDDocument() {
         WorkIDDocument result = WorkIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1000,7 +954,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public WorkID createWorkID() {
         WorkID result = WorkIDDocument.WorkID.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1008,7 +962,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public FormatMeasurementsDocument createFormatMeasurementsDocument() {
         FormatMeasurementsDocument result = FormatMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1016,7 +970,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public FormatMeasurements createFormatMeasurements() {
         FormatMeasurements result = FormatMeasurementsDocument.FormatMeasurements.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1024,7 +978,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NameActorDocument createNameActorDocument() {
         NameActorDocument result = NameActorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1032,7 +986,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NameActor createNameActor() {
         NameActor result = NameActorDocument.NameActor.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1040,7 +994,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public StyleWrapDocument createStyleWrapDocument() {
         StyleWrapDocument result = StyleWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1048,7 +1002,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public StyleWrap createStyleWrap() {
         StyleWrap result = StyleWrapDocument.StyleWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1056,7 +1010,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public StyleDocument createStyleDocument() {
         StyleDocument result = StyleDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1064,7 +1018,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public Style createStyle() {
         Style result = StyleDocument.Style.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1072,7 +1026,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingMaterialsTechWrapDocument createIndexingMaterialsTechWrapDocument() {
         IndexingMaterialsTechWrapDocument result = IndexingMaterialsTechWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1080,7 +1034,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingMaterialsTechWrap createIndexingMaterialsTechWrap() {
         IndexingMaterialsTechWrap result = IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1088,7 +1042,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingMaterialsTechSetDocument createIndexingMaterialsTechSetDocument() {
         IndexingMaterialsTechSetDocument result = IndexingMaterialsTechSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1096,7 +1050,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingMaterialsTechSet createIndexingMaterialsTechSet() {
         IndexingMaterialsTechSet result = IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1104,7 +1058,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LocRelatedWorkDocument createLocRelatedWorkDocument() {
         LocRelatedWorkDocument result = LocRelatedWorkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1112,7 +1066,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LocRelatedWork createLocRelatedWork() {
         LocRelatedWork result = LocRelatedWorkDocument.LocRelatedWork.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1120,7 +1074,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayEventWrapDocument createDisplayEventWrapDocument() {
         DisplayEventWrapDocument result = DisplayEventWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1128,7 +1082,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayEventWrap createDisplayEventWrap() {
         DisplayEventWrap result = DisplayEventWrapDocument.DisplayEventWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1136,7 +1090,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayEventDocument createDisplayEventDocument() {
         DisplayEventDocument result = DisplayEventDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1144,7 +1098,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayEvent createDisplayEvent() {
         DisplayEvent result = DisplayEventDocument.DisplayEvent.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1152,7 +1106,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public CultureDocument createCultureDocument() {
         CultureDocument result = CultureDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1160,7 +1114,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public Culture createCulture() {
         Culture result = CultureDocument.Culture.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1168,7 +1122,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordRelIDDocument createRecordRelIDDocument() {
         RecordRelIDDocument result = RecordRelIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1176,7 +1130,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordRelID createRecordRelID() {
         RecordRelID result = RecordRelIDDocument.RecordRelID.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1184,7 +1138,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ObjectClassificationWrapDocument createObjectClassificationWrapDocument() {
         ObjectClassificationWrapDocument result = ObjectClassificationWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1192,7 +1146,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ObjectClassificationWrap createObjectClassificationWrap() {
         ObjectClassificationWrap result = ObjectClassificationWrapDocument.ObjectClassificationWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1200,7 +1154,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ObjectWorkTypeWrapDocument createObjectWorkTypeWrapDocument() {
         ObjectWorkTypeWrapDocument result = ObjectWorkTypeWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1208,7 +1162,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ObjectWorkTypeWrap createObjectWorkTypeWrap() {
         ObjectWorkTypeWrap result = ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1216,7 +1170,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ClassificationWrapDocument createClassificationWrapDocument() {
         ClassificationWrapDocument result = ClassificationWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1224,7 +1178,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ClassificationWrap createClassificationWrap() {
         ClassificationWrap result = ClassificationWrapDocument.ClassificationWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1232,7 +1186,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ClassificationDocument createClassificationDocument() {
         ClassificationDocument result = ClassificationDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1240,7 +1194,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public Classification createClassification() {
         Classification result = ClassificationDocument.Classification.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1248,7 +1202,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptiveNoteWrapDocument createDescriptiveNoteWrapDocument() {
         DescriptiveNoteWrapDocument result = DescriptiveNoteWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1256,7 +1210,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptiveNoteWrap createDescriptiveNoteWrap() {
         DescriptiveNoteWrap result = DescriptiveNoteWrapDocument.DescriptiveNoteWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1264,7 +1218,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptiveNoteSetDocument createDescriptiveNoteSetDocument() {
         DescriptiveNoteSetDocument result = DescriptiveNoteSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1272,7 +1226,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptiveNoteSet createDescriptiveNoteSet() {
         DescriptiveNoteSet result = DescriptiveNoteSetDocument.DescriptiveNoteSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1280,7 +1234,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptiveNoteDocument createDescriptiveNoteDocument() {
         DescriptiveNoteDocument result = DescriptiveNoteDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1288,7 +1242,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptiveNote createDescriptiveNote() {
         DescriptiveNote result = DescriptiveNoteDocument.DescriptiveNote.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1296,7 +1250,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceDescriptiveNoteDocument createSourceDescriptiveNoteDocument() {
         SourceDescriptiveNoteDocument result = SourceDescriptiveNoteDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1304,7 +1258,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceDescriptiveNote createSourceDescriptiveNote() {
         SourceDescriptiveNote result = SourceDescriptiveNoteDocument.SourceDescriptiveNote.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1312,7 +1266,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingMeasurementsWrapDocument createIndexingMeasurementsWrapDocument() {
         IndexingMeasurementsWrapDocument result = IndexingMeasurementsWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1320,7 +1274,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingMeasurementsWrap createIndexingMeasurementsWrap() {
         IndexingMeasurementsWrap result = IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1328,7 +1282,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingMeasurementsSetDocument createIndexingMeasurementsSetDocument() {
         IndexingMeasurementsSetDocument result = IndexingMeasurementsSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1336,7 +1290,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingMeasurementsSet createIndexingMeasurementsSet() {
         IndexingMeasurementsSet result = IndexingMeasurementsSetDocument.IndexingMeasurementsSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1344,7 +1298,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ScaleMeasurementsDocument createScaleMeasurementsDocument() {
         ScaleMeasurementsDocument result = ScaleMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1352,7 +1306,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ScaleMeasurements createScaleMeasurements() {
         ScaleMeasurements result = ScaleMeasurementsDocument.ScaleMeasurements.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1360,7 +1314,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayMeasurementsDocument createDisplayMeasurementsDocument() {
         DisplayMeasurementsDocument result = DisplayMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1368,7 +1322,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayMeasurements createDisplayMeasurements() {
         DisplayMeasurements result = DisplayMeasurementsDocument.DisplayMeasurements.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1376,7 +1330,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public InscriptionsDocument createInscriptionsDocument() {
         InscriptionsDocument result = InscriptionsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1384,7 +1338,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public Inscriptions createInscriptions() {
         Inscriptions result = InscriptionsDocument.Inscriptions.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1392,7 +1346,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public EventTypeDocument createEventTypeDocument() {
         EventTypeDocument result = EventTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1400,7 +1354,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public EventType createEventType() {
         EventType result = EventTypeDocument.EventType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1408,7 +1362,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RightsWorkDocument createRightsWorkDocument() {
         RightsWorkDocument result = RightsWorkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1416,7 +1370,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RightsWork createRightsWork() {
         RightsWork result = RightsWorkDocument.RightsWork.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1424,7 +1378,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TitleDocument createTitleDocument() {
         TitleDocument result = TitleDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1432,7 +1386,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public Title createTitle() {
         Title result = TitleDocument.Title.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1440,7 +1394,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordInfoIDDocument createRecordInfoIDDocument() {
         RecordInfoIDDocument result = RecordInfoIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1448,7 +1402,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordInfoID createRecordInfoID() {
         RecordInfoID result = RecordInfoIDDocument.RecordInfoID.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1456,7 +1410,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptionWrapDocument createDescriptionWrapDocument() {
         DescriptionWrapDocument result = DescriptionWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1464,7 +1418,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptionWrap createDescriptionWrap() {
         DescriptionWrap result = DescriptionWrapDocument.DescriptionWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1472,7 +1426,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayCreationDateDocument createDisplayCreationDateDocument() {
         DisplayCreationDateDocument result = DisplayCreationDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1480,7 +1434,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayCreationDate createDisplayCreationDate() {
         DisplayCreationDate result = DisplayCreationDateDocument.DisplayCreationDate.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1488,7 +1442,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayCreationLocationDocument createDisplayCreationLocationDocument() {
         DisplayCreationLocationDocument result = DisplayCreationLocationDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1496,7 +1450,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayCreationLocation createDisplayCreationLocation() {
         DisplayCreationLocation result = DisplayCreationLocationDocument.DisplayCreationLocation.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1504,7 +1458,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayMaterialsTechDocument createDisplayMaterialsTechDocument() {
         DisplayMaterialsTechDocument result = DisplayMaterialsTechDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1512,7 +1466,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayMaterialsTech createDisplayMaterialsTech() {
         DisplayMaterialsTech result = DisplayMaterialsTechDocument.DisplayMaterialsTech.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1520,7 +1474,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayStateEditionWrapDocument createDisplayStateEditionWrapDocument() {
         DisplayStateEditionWrapDocument result = DisplayStateEditionWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1528,7 +1482,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayStateEditionWrap createDisplayStateEditionWrap() {
         DisplayStateEditionWrap result = DisplayStateEditionWrapDocument.DisplayStateEditionWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1536,7 +1490,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayStateDocument createDisplayStateDocument() {
         DisplayStateDocument result = DisplayStateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1544,7 +1498,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayState createDisplayState() {
         DisplayState result = DisplayStateDocument.DisplayState.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1552,7 +1506,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayEditionDocument createDisplayEditionDocument() {
         DisplayEditionDocument result = DisplayEditionDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1560,7 +1514,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DisplayEdition createDisplayEdition() {
         DisplayEdition result = DisplayEditionDocument.DisplayEdition.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1568,7 +1522,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceStateEditionDocument createSourceStateEditionDocument() {
         SourceStateEditionDocument result = SourceStateEditionDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1576,7 +1530,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceStateEdition createSourceStateEdition() {
         SourceStateEdition result = SourceStateEditionDocument.SourceStateEdition.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1584,7 +1538,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordSourceDocument createRecordSourceDocument() {
         RecordSourceDocument result = RecordSourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1592,7 +1546,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordSource createRecordSource() {
         RecordSource result = RecordSourceDocument.RecordSource.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1600,7 +1554,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordIDDocument createRecordIDDocument() {
         RecordIDDocument result = RecordIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1608,7 +1562,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordID createRecordID() {
         RecordID result = RecordIDDocument.RecordID.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1616,7 +1570,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelationWrapDocument createRelationWrapDocument() {
         RelationWrapDocument result = RelationWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1624,7 +1578,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelationWrap createRelationWrap() {
         RelationWrap result = RelationWrapDocument.RelationWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1632,7 +1586,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingSubjectWrapDocument createIndexingSubjectWrapDocument() {
         IndexingSubjectWrapDocument result = IndexingSubjectWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1640,7 +1594,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingSubjectWrap createIndexingSubjectWrap() {
         IndexingSubjectWrap result = IndexingSubjectWrapDocument.IndexingSubjectWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1648,7 +1602,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelatedWorksWrapDocument createRelatedWorksWrapDocument() {
         RelatedWorksWrapDocument result = RelatedWorksWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1656,7 +1610,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelatedWorksWrap createRelatedWorksWrap() {
         RelatedWorksWrap result = RelatedWorksWrapDocument.RelatedWorksWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1664,7 +1618,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelatedWorkSetDocument createRelatedWorkSetDocument() {
         RelatedWorkSetDocument result = RelatedWorkSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1672,7 +1626,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RelatedWorkSet createRelatedWorkSet() {
         RelatedWorkSet result = RelatedWorkSetDocument.RelatedWorkSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1680,7 +1634,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LinkRelatedWorkDocument createLinkRelatedWorkDocument() {
         LinkRelatedWorkDocument result = LinkRelatedWorkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1688,7 +1642,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LinkRelatedWork createLinkRelatedWork() {
         LinkRelatedWork result = LinkRelatedWorkDocument.LinkRelatedWork.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1696,7 +1650,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LabelRelatedWorkDocument createLabelRelatedWorkDocument() {
         LabelRelatedWorkDocument result = LabelRelatedWorkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1704,7 +1658,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public LabelRelatedWork createLabelRelatedWork() {
         LabelRelatedWork result = LabelRelatedWorkDocument.LabelRelatedWork.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1712,7 +1666,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingEventSetDocument createIndexingEventSetDocument() {
         IndexingEventSetDocument result = IndexingEventSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1720,7 +1674,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingEventSet createIndexingEventSet() {
         IndexingEventSet result = IndexingEventSetDocument.IndexingEventSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1728,7 +1682,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingActorSetDocument createIndexingActorSetDocument() {
         IndexingActorSetDocument result = IndexingActorSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1736,7 +1690,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingActorSet createIndexingActorSet() {
         IndexingActorSet result = IndexingActorSetDocument.IndexingActorSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1744,7 +1698,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NameActorSetDocument createNameActorSetDocument() {
         NameActorSetDocument result = NameActorSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1752,7 +1706,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NameActorSet createNameActorSet() {
         NameActorSet result = NameActorSetDocument.NameActorSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1760,7 +1714,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceNameActorDocument createSourceNameActorDocument() {
         SourceNameActorDocument result = SourceNameActorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1768,7 +1722,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceNameActor createSourceNameActor() {
         SourceNameActor result = SourceNameActorDocument.SourceNameActor.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1776,7 +1730,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public VitalDatesActorDocument createVitalDatesActorDocument() {
         VitalDatesActorDocument result = VitalDatesActorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1784,7 +1738,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public VitalDatesActor createVitalDatesActor() {
         VitalDatesActor result = VitalDatesActorDocument.VitalDatesActor.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1792,7 +1746,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RoleActorDocument createRoleActorDocument() {
         RoleActorDocument result = RoleActorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1800,7 +1754,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RoleActor createRoleActor() {
         RoleActor result = RoleActorDocument.RoleActor.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1808,7 +1762,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ExtentActorDocument createExtentActorDocument() {
         ExtentActorDocument result = ExtentActorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1816,7 +1770,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public ExtentActor createExtentActor() {
         ExtentActor result = ExtentActorDocument.ExtentActor.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1824,7 +1778,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingLocationWrapDocument createIndexingLocationWrapDocument() {
         IndexingLocationWrapDocument result = IndexingLocationWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1832,7 +1786,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingLocationWrap createIndexingLocationWrap() {
         IndexingLocationWrap result = IndexingLocationWrapDocument.IndexingLocationWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1840,7 +1794,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingLocationSetDocument createIndexingLocationSetDocument() {
         IndexingLocationSetDocument result = IndexingLocationSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1848,7 +1802,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingLocationSet createIndexingLocationSet() {
         IndexingLocationSet result = IndexingLocationSetDocument.IndexingLocationSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1856,7 +1810,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NameLocationSetDocument createNameLocationSetDocument() {
         NameLocationSetDocument result = NameLocationSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1864,7 +1818,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NameLocationSet createNameLocationSet() {
         NameLocationSet result = NameLocationSetDocument.NameLocationSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1872,7 +1826,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NameLocationDocument createNameLocationDocument() {
         NameLocationDocument result = NameLocationDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1880,7 +1834,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public NameLocation createNameLocation() {
         NameLocation result = NameLocationDocument.NameLocation.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1888,7 +1842,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceNameLocationDocument createSourceNameLocationDocument() {
         SourceNameLocationDocument result = SourceNameLocationDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1896,7 +1850,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceNameLocation createSourceNameLocation() {
         SourceNameLocation result = SourceNameLocationDocument.SourceNameLocation.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1904,7 +1858,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordInfoSetDocument createRecordInfoSetDocument() {
         RecordInfoSetDocument result = RecordInfoSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1912,7 +1866,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordInfoSet createRecordInfoSet() {
         RecordInfoSet result = RecordInfoSetDocument.RecordInfoSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1920,7 +1874,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordMetadataLocDocument createRecordMetadataLocDocument() {
         RecordMetadataLocDocument result = RecordMetadataLocDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1928,7 +1882,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordMetadataLoc createRecordMetadataLoc() {
         RecordMetadataLoc result = RecordMetadataLocDocument.RecordMetadataLoc.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1936,7 +1890,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordMetadataDateDocument createRecordMetadataDateDocument() {
         RecordMetadataDateDocument result = RecordMetadataDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1944,7 +1898,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordMetadataDate createRecordMetadataDate() {
         RecordMetadataDate result = RecordMetadataDateDocument.RecordMetadataDate.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1952,7 +1906,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceTitleDocument createSourceTitleDocument() {
         SourceTitleDocument result = SourceTitleDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1960,7 +1914,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public SourceTitle createSourceTitle() {
         SourceTitle result = SourceTitleDocument.SourceTitle.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1968,7 +1922,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingEventWrapDocument createIndexingEventWrapDocument() {
         IndexingEventWrapDocument result = IndexingEventWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1976,7 +1930,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IndexingEventWrap createIndexingEventWrap() {
         IndexingEventWrap result = IndexingEventWrapDocument.IndexingEventWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1984,7 +1938,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TitleSetDocument createTitleSetDocument() {
         TitleSetDocument result = TitleSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1992,7 +1946,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TitleSet createTitleSet() {
         TitleSet result = TitleSetDocument.TitleSet.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2000,7 +1954,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public InscriptionsWrapDocument createInscriptionsWrapDocument() {
         InscriptionsWrapDocument result = InscriptionsWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2008,7 +1962,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public InscriptionsWrap createInscriptionsWrap() {
         InscriptionsWrap result = InscriptionsWrapDocument.InscriptionsWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2016,7 +1970,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordTypeDocument createRecordTypeDocument() {
         RecordTypeDocument result = RecordTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2024,7 +1978,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordType createRecordType() {
         RecordType result = RecordTypeDocument.RecordType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2032,7 +1986,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public CultureWrapDocument createCultureWrapDocument() {
         CultureWrapDocument result = CultureWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2040,7 +1994,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public CultureWrap createCultureWrap() {
         CultureWrap result = CultureWrapDocument.CultureWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2048,7 +2002,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public MuseumdatDocument createMuseumdatDocument() {
         MuseumdatDocument result = MuseumdatDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2056,7 +2010,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public Museumdat createMuseumdat() {
         Museumdat result = MuseumdatDocument.Museumdat.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2064,7 +2018,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptiveMetadataDocument createDescriptiveMetadataDocument() {
         DescriptiveMetadataDocument result = DescriptiveMetadataDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2072,7 +2026,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public DescriptiveMetadata createDescriptiveMetadata() {
         DescriptiveMetadata result = DescriptiveMetadataDocument.DescriptiveMetadata.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2080,7 +2034,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IdentificationWrapDocument createIdentificationWrapDocument() {
         IdentificationWrapDocument result = IdentificationWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2088,7 +2042,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public IdentificationWrap createIdentificationWrap() {
         IdentificationWrap result = IdentificationWrapDocument.IdentificationWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2096,7 +2050,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TitleWrapDocument createTitleWrapDocument() {
         TitleWrapDocument result = TitleWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2104,7 +2058,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public TitleWrap createTitleWrap() {
         TitleWrap result = TitleWrapDocument.TitleWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2112,7 +2066,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public EventWrapDocument createEventWrapDocument() {
         EventWrapDocument result = EventWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2120,7 +2074,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public EventWrap createEventWrap() {
         EventWrap result = EventWrapDocument.EventWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2128,7 +2082,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public AdministrativeMetadataDocument createAdministrativeMetadataDocument() {
         AdministrativeMetadataDocument result = AdministrativeMetadataDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2136,7 +2090,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public AdministrativeMetadata createAdministrativeMetadata() {
         AdministrativeMetadata result = AdministrativeMetadataDocument.AdministrativeMetadata.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2144,7 +2098,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordWrapDocument createRecordWrapDocument() {
         RecordWrapDocument result = RecordWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2152,7 +2106,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public RecordWrap createRecordWrap() {
         RecordWrap result = RecordWrapDocument.RecordWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2160,7 +2114,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public MuseumdatWrapDocument createMuseumdatWrapDocument() {
         MuseumdatWrapDocument result = MuseumdatWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -2168,7 +2122,7 @@ public class MuseumDatModuleImpl extends AbstractMuseumDatModule {
     @Override
     public MuseumdatWrap createMuseumdatWrap() {
         MuseumdatWrap result = MuseumdatWrapDocument.MuseumdatWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 }
