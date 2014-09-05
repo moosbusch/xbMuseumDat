@@ -15,7 +15,7 @@
  */
 package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
 import org.moosbusch.museum.inject.annotation.Language;
-import org.moosbusch.museum.museumdat.inject.annotation.LanguageEncoding;
+import org.moosbusch.museum.inject.annotation.LanguageEncoding;
 import org.moosbusch.museum.inject.annotation.RelatedEncoding;
 /**
  * A document containing one museumdatWrap(@http://museum.zib.de/museumdat) element.
