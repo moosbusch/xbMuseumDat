@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one objectClassificationWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class ObjectClassificationWrapDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Sets the "objectClassificationWrap" element
      */
-    @Inject(optional=true) public void setObjectClassificationWrap(de.zib.museum.museumdat.ObjectClassificationWrapDocument.ObjectClassificationWrap objectClassificationWrap)
+    public void setObjectClassificationWrap(de.zib.museum.museumdat.ObjectClassificationWrapDocument.ObjectClassificationWrap objectClassificationWrap)
     {
         generatedSetterHelperImpl(objectClassificationWrap, OBJECTCLASSIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class ObjectClassificationWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "objectWorkTypeWrap" element
          */
-        @Inject(optional=true) public void setObjectWorkTypeWrap(de.zib.museum.museumdat.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap objectWorkTypeWrap)
+        public void setObjectWorkTypeWrap(de.zib.museum.museumdat.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap objectWorkTypeWrap)
         {
             generatedSetterHelperImpl(objectWorkTypeWrap, OBJECTWORKTYPEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -164,7 +164,7 @@ public class ObjectClassificationWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "classificationWrap" element
          */
-        @Inject(optional=true) public void setClassificationWrap(de.zib.museum.museumdat.ClassificationWrapDocument.ClassificationWrap classificationWrap)
+        public void setClassificationWrap(de.zib.museum.museumdat.ClassificationWrapDocument.ClassificationWrap classificationWrap)
         {
             generatedSetterHelperImpl(classificationWrap, CLASSIFICATIONWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

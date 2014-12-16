@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.document.museumdat.impl;
+package io.github.moosbusch.museum.document.museumdat.impl;
 
 import de.zib.museum.museumdat.MuseumdatWrapDocument;
 import java.io.IOException;
@@ -24,8 +24,7 @@ import javax.xml.namespace.QName;
 import org.apache.xmlbeans.XmlCursor;
 import org.apache.xmlbeans.XmlException;
 import org.apache.xmlbeans.XmlOptions;
-import org.moosbusch.museum.document.museumdat.spi.AbstractMuseumDatXmlDocument;
-import org.moosbusch.museum.inject.museumdat.impl.DefaultMuseumDatObjectFactory;
+import io.github.moosbusch.museum.document.museumdat.spi.AbstractMuseumDatXmlDocument;
 
 /**
  *

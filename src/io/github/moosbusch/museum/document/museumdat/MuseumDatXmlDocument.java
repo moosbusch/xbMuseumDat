@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.document.museumdat;
+package io.github.moosbusch.museum.document.museumdat;
 
 import de.zib.museum.museumdat.MuseumdatDocument.Museumdat;
 import de.zib.museum.museumdat.MuseumdatWrapDocument;
 import de.zib.museum.museumdat.MuseumdatWrapDocument.MuseumdatWrap;
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.inject.museumdat.impl.DefaultMuseumDatObjectFactory;
+import io.github.moosbusch.museum.document.MuseumXmlDocument;
+import io.github.moosbusch.museum.document.MuseumXmlDocument;
+import io.github.moosbusch.museum.document.museumdat.impl.DefaultMuseumDatObjectFactory;
 
 /**
  *

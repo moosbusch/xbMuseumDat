@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one indexingMeasurementsSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
     /**
      * Sets the "indexingMeasurementsSet" element
      */
-    @Inject(optional=true) public void setIndexingMeasurementsSet(de.zib.museum.museumdat.IndexingMeasurementsSetDocument.IndexingMeasurementsSet indexingMeasurementsSet)
+    public void setIndexingMeasurementsSet(de.zib.museum.museumdat.IndexingMeasurementsSetDocument.IndexingMeasurementsSet indexingMeasurementsSet)
     {
         generatedSetterHelperImpl(indexingMeasurementsSet, INDEXINGMEASUREMENTSSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -194,7 +194,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "measurementsSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setMeasurementsSetArray(de.zib.museum.museumdat.MeasurementsSetDocument.MeasurementsSet[] measurementsSetArray)
+        public void setMeasurementsSetArray(de.zib.museum.museumdat.MeasurementsSetDocument.MeasurementsSet[] measurementsSetArray)
         {
             check_orphaned();
             arraySetterHelper(measurementsSetArray, MEASUREMENTSSET$0);
@@ -203,7 +203,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "measurementsSet" element
          */
-        @Inject(optional=true) public void setMeasurementsSetArray(int i, de.zib.museum.museumdat.MeasurementsSetDocument.MeasurementsSet measurementsSet)
+        public void setMeasurementsSetArray(int i, de.zib.museum.museumdat.MeasurementsSetDocument.MeasurementsSet measurementsSet)
         {
             generatedSetterHelperImpl(measurementsSet, MEASUREMENTSSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -343,7 +343,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "extentMeasurements" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setExtentMeasurementsArray(de.zib.museum.museumdat.ExtentMeasurementsDocument.ExtentMeasurements[] extentMeasurementsArray)
+        public void setExtentMeasurementsArray(de.zib.museum.museumdat.ExtentMeasurementsDocument.ExtentMeasurements[] extentMeasurementsArray)
         {
             check_orphaned();
             arraySetterHelper(extentMeasurementsArray, EXTENTMEASUREMENTS$2);
@@ -352,7 +352,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "extentMeasurements" element
          */
-        @Inject(optional=true) public void setExtentMeasurementsArray(int i, de.zib.museum.museumdat.ExtentMeasurementsDocument.ExtentMeasurements extentMeasurements)
+        public void setExtentMeasurementsArray(int i, de.zib.museum.museumdat.ExtentMeasurementsDocument.ExtentMeasurements extentMeasurements)
         {
             generatedSetterHelperImpl(extentMeasurements, EXTENTMEASUREMENTS$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -573,7 +573,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "qualifierMeasurements" element
          */
-        @Inject(optional=true) public void setQualifierMeasurementsArray(java.lang.String[] qualifierMeasurementsArray)
+        public void setQualifierMeasurementsArray(java.lang.String[] qualifierMeasurementsArray)
         {
             synchronized (monitor())
             {
@@ -585,7 +585,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "qualifierMeasurements" element
          */
-        @Inject(optional=true) public void setQualifierMeasurementsArray(int i, java.lang.String qualifierMeasurements)
+        public void setQualifierMeasurementsArray(int i, java.lang.String qualifierMeasurements)
         {
             synchronized (monitor())
             {
@@ -793,7 +793,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "formatMeasurements" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setFormatMeasurementsArray(de.zib.museum.museumdat.FormatMeasurementsDocument.FormatMeasurements[] formatMeasurementsArray)
+        public void setFormatMeasurementsArray(de.zib.museum.museumdat.FormatMeasurementsDocument.FormatMeasurements[] formatMeasurementsArray)
         {
             check_orphaned();
             arraySetterHelper(formatMeasurementsArray, FORMATMEASUREMENTS$6);
@@ -802,7 +802,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "formatMeasurements" element
          */
-        @Inject(optional=true) public void setFormatMeasurementsArray(int i, de.zib.museum.museumdat.FormatMeasurementsDocument.FormatMeasurements formatMeasurements)
+        public void setFormatMeasurementsArray(int i, de.zib.museum.museumdat.FormatMeasurementsDocument.FormatMeasurements formatMeasurements)
         {
             generatedSetterHelperImpl(formatMeasurements, FORMATMEASUREMENTS$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -942,7 +942,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "shapeMeasurements" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setShapeMeasurementsArray(de.zib.museum.museumdat.ShapeMeasurementsDocument.ShapeMeasurements[] shapeMeasurementsArray)
+        public void setShapeMeasurementsArray(de.zib.museum.museumdat.ShapeMeasurementsDocument.ShapeMeasurements[] shapeMeasurementsArray)
         {
             check_orphaned();
             arraySetterHelper(shapeMeasurementsArray, SHAPEMEASUREMENTS$8);
@@ -951,7 +951,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "shapeMeasurements" element
          */
-        @Inject(optional=true) public void setShapeMeasurementsArray(int i, de.zib.museum.museumdat.ShapeMeasurementsDocument.ShapeMeasurements shapeMeasurements)
+        public void setShapeMeasurementsArray(int i, de.zib.museum.museumdat.ShapeMeasurementsDocument.ShapeMeasurements shapeMeasurements)
         {
             generatedSetterHelperImpl(shapeMeasurements, SHAPEMEASUREMENTS$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -1091,7 +1091,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "scaleMeasurements" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setScaleMeasurementsArray(de.zib.museum.museumdat.ScaleMeasurementsDocument.ScaleMeasurements[] scaleMeasurementsArray)
+        public void setScaleMeasurementsArray(de.zib.museum.museumdat.ScaleMeasurementsDocument.ScaleMeasurements[] scaleMeasurementsArray)
         {
             check_orphaned();
             arraySetterHelper(scaleMeasurementsArray, SCALEMEASUREMENTS$10);
@@ -1100,7 +1100,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "scaleMeasurements" element
          */
-        @Inject(optional=true) public void setScaleMeasurementsArray(int i, de.zib.museum.museumdat.ScaleMeasurementsDocument.ScaleMeasurements scaleMeasurements)
+        public void setScaleMeasurementsArray(int i, de.zib.museum.museumdat.ScaleMeasurementsDocument.ScaleMeasurements scaleMeasurements)
         {
             generatedSetterHelperImpl(scaleMeasurements, SCALEMEASUREMENTS$10, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

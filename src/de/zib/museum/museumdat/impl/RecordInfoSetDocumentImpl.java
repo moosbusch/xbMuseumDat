@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one recordInfoSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "recordInfoSet" element
      */
-    @Inject(optional=true) public void setRecordInfoSet(de.zib.museum.museumdat.RecordInfoSetDocument.RecordInfoSet recordInfoSet)
+    public void setRecordInfoSet(de.zib.museum.museumdat.RecordInfoSetDocument.RecordInfoSet recordInfoSet)
     {
         generatedSetterHelperImpl(recordInfoSet, RECORDINFOSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -194,7 +194,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets array of all "recordInfoID" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRecordInfoIDArray(de.zib.museum.museumdat.RecordInfoIDDocument.RecordInfoID[] recordInfoIDArray)
+        public void setRecordInfoIDArray(de.zib.museum.museumdat.RecordInfoIDDocument.RecordInfoID[] recordInfoIDArray)
         {
             check_orphaned();
             arraySetterHelper(recordInfoIDArray, RECORDINFOID$0);
@@ -203,7 +203,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets ith "recordInfoID" element
          */
-        @Inject(optional=true) public void setRecordInfoIDArray(int i, de.zib.museum.museumdat.RecordInfoIDDocument.RecordInfoID recordInfoID)
+        public void setRecordInfoIDArray(int i, de.zib.museum.museumdat.RecordInfoIDDocument.RecordInfoID recordInfoID)
         {
             generatedSetterHelperImpl(recordInfoID, RECORDINFOID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -343,7 +343,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets array of all "recordInfoLink" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRecordInfoLinkArray(de.zib.museum.museumdat.RecordInfoLinkDocument.RecordInfoLink[] recordInfoLinkArray)
+        public void setRecordInfoLinkArray(de.zib.museum.museumdat.RecordInfoLinkDocument.RecordInfoLink[] recordInfoLinkArray)
         {
             check_orphaned();
             arraySetterHelper(recordInfoLinkArray, RECORDINFOLINK$2);
@@ -352,7 +352,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets ith "recordInfoLink" element
          */
-        @Inject(optional=true) public void setRecordInfoLinkArray(int i, de.zib.museum.museumdat.RecordInfoLinkDocument.RecordInfoLink recordInfoLink)
+        public void setRecordInfoLinkArray(int i, de.zib.museum.museumdat.RecordInfoLinkDocument.RecordInfoLink recordInfoLink)
         {
             generatedSetterHelperImpl(recordInfoLink, RECORDINFOLINK$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -492,7 +492,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets array of all "recordRelID" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRecordRelIDArray(de.zib.museum.museumdat.RecordRelIDDocument.RecordRelID[] recordRelIDArray)
+        public void setRecordRelIDArray(de.zib.museum.museumdat.RecordRelIDDocument.RecordRelID[] recordRelIDArray)
         {
             check_orphaned();
             arraySetterHelper(recordRelIDArray, RECORDRELID$4);
@@ -501,7 +501,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets ith "recordRelID" element
          */
-        @Inject(optional=true) public void setRecordRelIDArray(int i, de.zib.museum.museumdat.RecordRelIDDocument.RecordRelID recordRelID)
+        public void setRecordRelIDArray(int i, de.zib.museum.museumdat.RecordRelIDDocument.RecordRelID recordRelID)
         {
             generatedSetterHelperImpl(recordRelID, RECORDRELID$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -641,7 +641,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets array of all "recordMetadataLoc" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRecordMetadataLocArray(de.zib.museum.museumdat.RecordMetadataLocDocument.RecordMetadataLoc[] recordMetadataLocArray)
+        public void setRecordMetadataLocArray(de.zib.museum.museumdat.RecordMetadataLocDocument.RecordMetadataLoc[] recordMetadataLocArray)
         {
             check_orphaned();
             arraySetterHelper(recordMetadataLocArray, RECORDMETADATALOC$6);
@@ -650,7 +650,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets ith "recordMetadataLoc" element
          */
-        @Inject(optional=true) public void setRecordMetadataLocArray(int i, de.zib.museum.museumdat.RecordMetadataLocDocument.RecordMetadataLoc recordMetadataLoc)
+        public void setRecordMetadataLocArray(int i, de.zib.museum.museumdat.RecordMetadataLocDocument.RecordMetadataLoc recordMetadataLoc)
         {
             generatedSetterHelperImpl(recordMetadataLoc, RECORDMETADATALOC$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -790,7 +790,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets array of all "recordMetadataDate" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRecordMetadataDateArray(de.zib.museum.museumdat.RecordMetadataDateDocument.RecordMetadataDate[] recordMetadataDateArray)
+        public void setRecordMetadataDateArray(de.zib.museum.museumdat.RecordMetadataDateDocument.RecordMetadataDate[] recordMetadataDateArray)
         {
             check_orphaned();
             arraySetterHelper(recordMetadataDateArray, RECORDMETADATADATE$8);
@@ -799,7 +799,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets ith "recordMetadataDate" element
          */
-        @Inject(optional=true) public void setRecordMetadataDateArray(int i, de.zib.museum.museumdat.RecordMetadataDateDocument.RecordMetadataDate recordMetadataDate)
+        public void setRecordMetadataDateArray(int i, de.zib.museum.museumdat.RecordMetadataDateDocument.RecordMetadataDate recordMetadataDate)
         {
             generatedSetterHelperImpl(recordMetadataDate, RECORDMETADATADATE$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -891,7 +891,7 @@ public class RecordInfoSetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

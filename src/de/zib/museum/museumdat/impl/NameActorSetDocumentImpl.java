@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one nameActorSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class NameActorSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "nameActorSet" element
      */
-    @Inject(optional=true) public void setNameActorSet(de.zib.museum.museumdat.NameActorSetDocument.NameActorSet nameActorSet)
+    public void setNameActorSet(de.zib.museum.museumdat.NameActorSetDocument.NameActorSet nameActorSet)
     {
         generatedSetterHelperImpl(nameActorSet, NAMEACTORSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class NameActorSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "nameActor" element
          */
-        @Inject(optional=true) public void setNameActor(de.zib.museum.museumdat.NameActorDocument.NameActor nameActor)
+        public void setNameActor(de.zib.museum.museumdat.NameActorDocument.NameActor nameActor)
         {
             generatedSetterHelperImpl(nameActor, NAMEACTOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -226,7 +226,7 @@ public class NameActorSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets array of all "sourceNameActor" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setSourceNameActorArray(de.zib.museum.museumdat.SourceNameActorDocument.SourceNameActor[] sourceNameActorArray)
+        public void setSourceNameActorArray(de.zib.museum.museumdat.SourceNameActorDocument.SourceNameActor[] sourceNameActorArray)
         {
             check_orphaned();
             arraySetterHelper(sourceNameActorArray, SOURCENAMEACTOR$2);
@@ -235,7 +235,7 @@ public class NameActorSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets ith "sourceNameActor" element
          */
-        @Inject(optional=true) public void setSourceNameActorArray(int i, de.zib.museum.museumdat.SourceNameActorDocument.SourceNameActor sourceNameActor)
+        public void setSourceNameActorArray(int i, de.zib.museum.museumdat.SourceNameActorDocument.SourceNameActor sourceNameActor)
         {
             generatedSetterHelperImpl(sourceNameActor, SOURCENAMEACTOR$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one sourceNameLocation(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class SourceNameLocationDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "sourceNameLocation" element
      */
-    @Inject(optional=true) public void setSourceNameLocation(de.zib.museum.museumdat.SourceNameLocationDocument.SourceNameLocation sourceNameLocation)
+    public void setSourceNameLocation(de.zib.museum.museumdat.SourceNameLocationDocument.SourceNameLocation sourceNameLocation)
     {
         generatedSetterHelperImpl(sourceNameLocation, SOURCENAMELOCATION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -145,7 +145,7 @@ public class SourceNameLocationDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -237,7 +237,7 @@ public class SourceNameLocationDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+        public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -329,7 +329,7 @@ public class SourceNameLocationDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {

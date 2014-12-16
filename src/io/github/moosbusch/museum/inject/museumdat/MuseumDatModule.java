@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.museumdat;
+package io.github.moosbusch.museum.inject.museumdat;
 
 import de.zib.museum.museumdat.AdministrativeMetadataDocument;
 import de.zib.museum.museumdat.AdministrativeMetadataDocument.AdministrativeMetadata;
@@ -250,21 +250,15 @@ import de.zib.museum.museumdat.VitalDatesActorDocument;
 import de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor;
 import de.zib.museum.museumdat.WorkIDDocument;
 import de.zib.museum.museumdat.WorkIDDocument.WorkID;
-import org.moosbusch.museum.document.museumdat.MuseumDatXmlDocument;
-import org.moosbusch.museum.inject.MuseumXmlModule;
-import org.moosbusch.museum.inject.museumdat.impl.DefaultMuseumDatObjectFactory;
+import io.github.moosbusch.museum.document.museumdat.MuseumDatXmlDocument;
+import io.github.moosbusch.museum.document.museumdat.impl.DefaultMuseumDatObjectFactory;
+import io.github.moosbusch.museum.inject.MuseumXmlModule;
 
 /**
  *
  * @author moosbusch
  */
 public interface MuseumDatModule extends MuseumXmlModule {
-
-    public String getLanguageEncoding();
-
-    public String getRelatedEncoding();
-
-    public String getEncodingAnalog();
 
     @Override
     public MuseumDatXmlDocument<? extends DefaultMuseumDatObjectFactory> createDocument();

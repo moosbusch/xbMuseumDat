@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one indexingLocationWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IndexingLocationWrapDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "indexingLocationWrap" element
      */
-    @Inject(optional=true) public void setIndexingLocationWrap(de.zib.museum.museumdat.IndexingLocationWrapDocument.IndexingLocationWrap indexingLocationWrap)
+    public void setIndexingLocationWrap(de.zib.museum.museumdat.IndexingLocationWrapDocument.IndexingLocationWrap indexingLocationWrap)
     {
         generatedSetterHelperImpl(indexingLocationWrap, INDEXINGLOCATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class IndexingLocationWrapDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Sets array of all "indexingLocationSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setIndexingLocationSetArray(de.zib.museum.museumdat.IndexingLocationSetDocument.IndexingLocationSet[] indexingLocationSetArray)
+        public void setIndexingLocationSetArray(de.zib.museum.museumdat.IndexingLocationSetDocument.IndexingLocationSet[] indexingLocationSetArray)
         {
             check_orphaned();
             arraySetterHelper(indexingLocationSetArray, INDEXINGLOCATIONSET$0);
@@ -193,7 +193,7 @@ public class IndexingLocationWrapDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Sets ith "indexingLocationSet" element
          */
-        @Inject(optional=true) public void setIndexingLocationSetArray(int i, de.zib.museum.museumdat.IndexingLocationSetDocument.IndexingLocationSet indexingLocationSet)
+        public void setIndexingLocationSetArray(int i, de.zib.museum.museumdat.IndexingLocationSetDocument.IndexingLocationSet indexingLocationSet)
         {
             generatedSetterHelperImpl(indexingLocationSet, INDEXINGLOCATIONSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

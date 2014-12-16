@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one repositorySet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class RepositorySetDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "repositorySet" element
      */
-    @Inject(optional=true) public void setRepositorySet(de.zib.museum.museumdat.RepositorySetDocument.RepositorySet repositorySet)
+    public void setRepositorySet(de.zib.museum.museumdat.RepositorySetDocument.RepositorySet repositorySet)
     {
         generatedSetterHelperImpl(repositorySet, REPOSITORYSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -128,7 +128,7 @@ public class RepositorySetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets the "repositoryName" element
          */
-        @Inject(optional=true) public void setRepositoryName(de.zib.museum.museumdat.RepositoryNameDocument.RepositoryName repositoryName)
+        public void setRepositoryName(de.zib.museum.museumdat.RepositoryNameDocument.RepositoryName repositoryName)
         {
             generatedSetterHelperImpl(repositoryName, REPOSITORYNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -254,7 +254,7 @@ public class RepositorySetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets array of all "workID" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setWorkIDArray(de.zib.museum.museumdat.WorkIDDocument.WorkID[] workIDArray)
+        public void setWorkIDArray(de.zib.museum.museumdat.WorkIDDocument.WorkID[] workIDArray)
         {
             check_orphaned();
             arraySetterHelper(workIDArray, WORKID$2);
@@ -263,7 +263,7 @@ public class RepositorySetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets ith "workID" element
          */
-        @Inject(optional=true) public void setWorkIDArray(int i, de.zib.museum.museumdat.WorkIDDocument.WorkID workID)
+        public void setWorkIDArray(int i, de.zib.museum.museumdat.WorkIDDocument.WorkID workID)
         {
             generatedSetterHelperImpl(workID, WORKID$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -341,7 +341,7 @@ public class RepositorySetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets the "repositoryLocationName" element
          */
-        @Inject(optional=true) public void setRepositoryLocationName(de.zib.museum.museumdat.RepositoryLocationNameDocument.RepositoryLocationName repositoryLocationName)
+        public void setRepositoryLocationName(de.zib.museum.museumdat.RepositoryLocationNameDocument.RepositoryLocationName repositoryLocationName)
         {
             generatedSetterHelperImpl(repositoryLocationName, REPOSITORYLOCATIONNAME$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -419,7 +419,7 @@ public class RepositorySetDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(de.zib.museum.museumdat.RepositorySetDocument.RepositorySet.Type.Enum type)
+        public void setType(de.zib.museum.museumdat.RepositorySetDocument.RepositorySet.Type.Enum type)
         {
             synchronized (monitor())
             {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one resourceRelType(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class ResourceRelTypeDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "resourceRelType" element
      */
-    @Inject(optional=true) public void setResourceRelType(de.zib.museum.museumdat.ResourceRelTypeDocument.ResourceRelType resourceRelType)
+    public void setResourceRelType(de.zib.museum.museumdat.ResourceRelTypeDocument.ResourceRelType resourceRelType)
     {
         generatedSetterHelperImpl(resourceRelType, RESOURCERELTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -147,7 +147,7 @@ public class ResourceRelTypeDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -239,7 +239,7 @@ public class ResourceRelTypeDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -331,7 +331,7 @@ public class ResourceRelTypeDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+        public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -423,7 +423,7 @@ public class ResourceRelTypeDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {

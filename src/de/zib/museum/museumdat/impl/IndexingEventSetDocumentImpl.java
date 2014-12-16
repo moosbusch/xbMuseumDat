@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one indexingEventSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IndexingEventSetDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "indexingEventSet" element
      */
-    @Inject(optional=true) public void setIndexingEventSet(de.zib.museum.museumdat.IndexingEventSetDocument.IndexingEventSet indexingEventSet)
+    public void setIndexingEventSet(de.zib.museum.museumdat.IndexingEventSetDocument.IndexingEventSet indexingEventSet)
     {
         generatedSetterHelperImpl(indexingEventSet, INDEXINGEVENTSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -116,7 +116,7 @@ public class IndexingEventSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "eventType" element
          */
-        @Inject(optional=true) public void setEventType(de.zib.museum.museumdat.EventTypeDocument.EventType eventType)
+        public void setEventType(de.zib.museum.museumdat.EventTypeDocument.EventType eventType)
         {
             generatedSetterHelperImpl(eventType, EVENTTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -230,7 +230,7 @@ public class IndexingEventSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "indexingActorSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setIndexingActorSetArray(de.zib.museum.museumdat.IndexingActorSetDocument.IndexingActorSet[] indexingActorSetArray)
+        public void setIndexingActorSetArray(de.zib.museum.museumdat.IndexingActorSetDocument.IndexingActorSet[] indexingActorSetArray)
         {
             check_orphaned();
             arraySetterHelper(indexingActorSetArray, INDEXINGACTORSET$2);
@@ -239,7 +239,7 @@ public class IndexingEventSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "indexingActorSet" element
          */
-        @Inject(optional=true) public void setIndexingActorSetArray(int i, de.zib.museum.museumdat.IndexingActorSetDocument.IndexingActorSet indexingActorSet)
+        public void setIndexingActorSetArray(int i, de.zib.museum.museumdat.IndexingActorSetDocument.IndexingActorSet indexingActorSet)
         {
             generatedSetterHelperImpl(indexingActorSet, INDEXINGACTORSET$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -317,7 +317,7 @@ public class IndexingEventSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "indexingDates" element
          */
-        @Inject(optional=true) public void setIndexingDates(de.zib.museum.museumdat.IndexingDatesDocument.IndexingDates indexingDates)
+        public void setIndexingDates(de.zib.museum.museumdat.IndexingDatesDocument.IndexingDates indexingDates)
         {
             generatedSetterHelperImpl(indexingDates, INDEXINGDATES$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -381,7 +381,7 @@ public class IndexingEventSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "indexingLocationWrap" element
          */
-        @Inject(optional=true) public void setIndexingLocationWrap(de.zib.museum.museumdat.IndexingLocationWrapDocument.IndexingLocationWrap indexingLocationWrap)
+        public void setIndexingLocationWrap(de.zib.museum.museumdat.IndexingLocationWrapDocument.IndexingLocationWrap indexingLocationWrap)
         {
             generatedSetterHelperImpl(indexingLocationWrap, INDEXINGLOCATIONWRAP$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

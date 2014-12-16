@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one descriptiveNoteWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class DescriptiveNoteWrapDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "descriptiveNoteWrap" element
      */
-    @Inject(optional=true) public void setDescriptiveNoteWrap(de.zib.museum.museumdat.DescriptiveNoteWrapDocument.DescriptiveNoteWrap descriptiveNoteWrap)
+    public void setDescriptiveNoteWrap(de.zib.museum.museumdat.DescriptiveNoteWrapDocument.DescriptiveNoteWrap descriptiveNoteWrap)
     {
         generatedSetterHelperImpl(descriptiveNoteWrap, DESCRIPTIVENOTEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class DescriptiveNoteWrapDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets array of all "descriptiveNoteSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setDescriptiveNoteSetArray(de.zib.museum.museumdat.DescriptiveNoteSetDocument.DescriptiveNoteSet[] descriptiveNoteSetArray)
+        public void setDescriptiveNoteSetArray(de.zib.museum.museumdat.DescriptiveNoteSetDocument.DescriptiveNoteSet[] descriptiveNoteSetArray)
         {
             check_orphaned();
             arraySetterHelper(descriptiveNoteSetArray, DESCRIPTIVENOTESET$0);
@@ -193,7 +193,7 @@ public class DescriptiveNoteWrapDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets ith "descriptiveNoteSet" element
          */
-        @Inject(optional=true) public void setDescriptiveNoteSetArray(int i, de.zib.museum.museumdat.DescriptiveNoteSetDocument.DescriptiveNoteSet descriptiveNoteSet)
+        public void setDescriptiveNoteSetArray(int i, de.zib.museum.museumdat.DescriptiveNoteSetDocument.DescriptiveNoteSet descriptiveNoteSet)
         {
             generatedSetterHelperImpl(descriptiveNoteSet, DESCRIPTIVENOTESET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

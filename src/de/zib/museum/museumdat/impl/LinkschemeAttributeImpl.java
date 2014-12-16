@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one linkscheme(@http://museum.zib.de/museumdat) attribute.
  *
@@ -79,7 +79,7 @@ public class LinkschemeAttributeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "linkscheme" attribute
      */
-    @Inject(optional=true) public void setLinkscheme(java.lang.String linkscheme)
+    public void setLinkscheme(java.lang.String linkscheme)
     {
         synchronized (monitor())
         {

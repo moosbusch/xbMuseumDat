@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one roleActor(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class RoleActorDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "roleActor" element
      */
-    @Inject(optional=true) public void setRoleActor(de.zib.museum.museumdat.RoleActorDocument.RoleActor roleActor)
+    public void setRoleActor(de.zib.museum.museumdat.RoleActorDocument.RoleActor roleActor)
     {
         generatedSetterHelperImpl(roleActor, ROLEACTOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -149,7 +149,7 @@ public class RoleActorDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -241,7 +241,7 @@ public class RoleActorDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "termsourceID" attribute
          */
-        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
+        public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {
@@ -333,7 +333,7 @@ public class RoleActorDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -425,7 +425,7 @@ public class RoleActorDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+        public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -517,7 +517,7 @@ public class RoleActorDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {

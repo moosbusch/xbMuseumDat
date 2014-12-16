@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one relatedWorkSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "relatedWorkSet" element
      */
-    @Inject(optional=true) public void setRelatedWorkSet(de.zib.museum.museumdat.RelatedWorkSetDocument.RelatedWorkSet relatedWorkSet)
+    public void setRelatedWorkSet(de.zib.museum.museumdat.RelatedWorkSetDocument.RelatedWorkSet relatedWorkSet)
     {
         generatedSetterHelperImpl(relatedWorkSet, RELATEDWORKSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -190,7 +190,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "linkRelatedWork" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setLinkRelatedWorkArray(de.zib.museum.museumdat.LinkRelatedWorkDocument.LinkRelatedWork[] linkRelatedWorkArray)
+        public void setLinkRelatedWorkArray(de.zib.museum.museumdat.LinkRelatedWorkDocument.LinkRelatedWork[] linkRelatedWorkArray)
         {
             check_orphaned();
             arraySetterHelper(linkRelatedWorkArray, LINKRELATEDWORK$0);
@@ -199,7 +199,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "linkRelatedWork" element
          */
-        @Inject(optional=true) public void setLinkRelatedWorkArray(int i, de.zib.museum.museumdat.LinkRelatedWorkDocument.LinkRelatedWork linkRelatedWork)
+        public void setLinkRelatedWorkArray(int i, de.zib.museum.museumdat.LinkRelatedWorkDocument.LinkRelatedWork linkRelatedWork)
         {
             generatedSetterHelperImpl(linkRelatedWork, LINKRELATEDWORK$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -277,7 +277,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "relatedWorkRelType" element
          */
-        @Inject(optional=true) public void setRelatedWorkRelType(de.zib.museum.museumdat.RelatedWorkRelTypeDocument.RelatedWorkRelType relatedWorkRelType)
+        public void setRelatedWorkRelType(de.zib.museum.museumdat.RelatedWorkRelTypeDocument.RelatedWorkRelType relatedWorkRelType)
         {
             generatedSetterHelperImpl(relatedWorkRelType, RELATEDWORKRELTYPE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -403,7 +403,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "labelRelatedWork" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setLabelRelatedWorkArray(de.zib.museum.museumdat.LabelRelatedWorkDocument.LabelRelatedWork[] labelRelatedWorkArray)
+        public void setLabelRelatedWorkArray(de.zib.museum.museumdat.LabelRelatedWorkDocument.LabelRelatedWork[] labelRelatedWorkArray)
         {
             check_orphaned();
             arraySetterHelper(labelRelatedWorkArray, LABELRELATEDWORK$4);
@@ -412,7 +412,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "labelRelatedWork" element
          */
-        @Inject(optional=true) public void setLabelRelatedWorkArray(int i, de.zib.museum.museumdat.LabelRelatedWorkDocument.LabelRelatedWork labelRelatedWork)
+        public void setLabelRelatedWorkArray(int i, de.zib.museum.museumdat.LabelRelatedWorkDocument.LabelRelatedWork labelRelatedWork)
         {
             generatedSetterHelperImpl(labelRelatedWork, LABELRELATEDWORK$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -552,7 +552,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "locRelatedWork" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setLocRelatedWorkArray(de.zib.museum.museumdat.LocRelatedWorkDocument.LocRelatedWork[] locRelatedWorkArray)
+        public void setLocRelatedWorkArray(de.zib.museum.museumdat.LocRelatedWorkDocument.LocRelatedWork[] locRelatedWorkArray)
         {
             check_orphaned();
             arraySetterHelper(locRelatedWorkArray, LOCRELATEDWORK$6);
@@ -561,7 +561,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "locRelatedWork" element
          */
-        @Inject(optional=true) public void setLocRelatedWorkArray(int i, de.zib.museum.museumdat.LocRelatedWorkDocument.LocRelatedWork locRelatedWork)
+        public void setLocRelatedWorkArray(int i, de.zib.museum.museumdat.LocRelatedWorkDocument.LocRelatedWork locRelatedWork)
         {
             generatedSetterHelperImpl(locRelatedWork, LOCRELATEDWORK$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

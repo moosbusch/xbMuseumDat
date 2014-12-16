@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one indexingMaterialsTechSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Sets the "indexingMaterialsTechSet" element
      */
-    @Inject(optional=true) public void setIndexingMaterialsTechSet(de.zib.museum.museumdat.IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet indexingMaterialsTechSet)
+    public void setIndexingMaterialsTechSet(de.zib.museum.museumdat.IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet indexingMaterialsTechSet)
     {
         generatedSetterHelperImpl(indexingMaterialsTechSet, INDEXINGMATERIALSTECHSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -190,7 +190,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets array of all "termMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setTermMaterialsTechArray(de.zib.museum.museumdat.TermMaterialsTechDocument.TermMaterialsTech[] termMaterialsTechArray)
+        public void setTermMaterialsTechArray(de.zib.museum.museumdat.TermMaterialsTechDocument.TermMaterialsTech[] termMaterialsTechArray)
         {
             check_orphaned();
             arraySetterHelper(termMaterialsTechArray, TERMMATERIALSTECH$0);
@@ -199,7 +199,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets ith "termMaterialsTech" element
          */
-        @Inject(optional=true) public void setTermMaterialsTechArray(int i, de.zib.museum.museumdat.TermMaterialsTechDocument.TermMaterialsTech termMaterialsTech)
+        public void setTermMaterialsTechArray(int i, de.zib.museum.museumdat.TermMaterialsTechDocument.TermMaterialsTech termMaterialsTech)
         {
             generatedSetterHelperImpl(termMaterialsTech, TERMMATERIALSTECH$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -339,7 +339,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets array of all "extentMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setExtentMaterialsTechArray(de.zib.museum.museumdat.ExtentMaterialsTechDocument.ExtentMaterialsTech[] extentMaterialsTechArray)
+        public void setExtentMaterialsTechArray(de.zib.museum.museumdat.ExtentMaterialsTechDocument.ExtentMaterialsTech[] extentMaterialsTechArray)
         {
             check_orphaned();
             arraySetterHelper(extentMaterialsTechArray, EXTENTMATERIALSTECH$2);
@@ -348,7 +348,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets ith "extentMaterialsTech" element
          */
-        @Inject(optional=true) public void setExtentMaterialsTechArray(int i, de.zib.museum.museumdat.ExtentMaterialsTechDocument.ExtentMaterialsTech extentMaterialsTech)
+        public void setExtentMaterialsTechArray(int i, de.zib.museum.museumdat.ExtentMaterialsTechDocument.ExtentMaterialsTech extentMaterialsTech)
         {
             generatedSetterHelperImpl(extentMaterialsTech, EXTENTMATERIALSTECH$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -488,7 +488,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets array of all "sourceMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setSourceMaterialsTechArray(de.zib.museum.museumdat.SourceMaterialsTechDocument.SourceMaterialsTech[] sourceMaterialsTechArray)
+        public void setSourceMaterialsTechArray(de.zib.museum.museumdat.SourceMaterialsTechDocument.SourceMaterialsTech[] sourceMaterialsTechArray)
         {
             check_orphaned();
             arraySetterHelper(sourceMaterialsTechArray, SOURCEMATERIALSTECH$4);
@@ -497,7 +497,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets ith "sourceMaterialsTech" element
          */
-        @Inject(optional=true) public void setSourceMaterialsTechArray(int i, de.zib.museum.museumdat.SourceMaterialsTechDocument.SourceMaterialsTech sourceMaterialsTech)
+        public void setSourceMaterialsTechArray(int i, de.zib.museum.museumdat.SourceMaterialsTechDocument.SourceMaterialsTech sourceMaterialsTech)
         {
             generatedSetterHelperImpl(sourceMaterialsTech, SOURCEMATERIALSTECH$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -589,7 +589,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

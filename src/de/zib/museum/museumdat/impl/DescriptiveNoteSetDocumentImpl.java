@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one descriptiveNoteSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "descriptiveNoteSet" element
      */
-    @Inject(optional=true) public void setDescriptiveNoteSet(de.zib.museum.museumdat.DescriptiveNoteSetDocument.DescriptiveNoteSet descriptiveNoteSet)
+    public void setDescriptiveNoteSet(de.zib.museum.museumdat.DescriptiveNoteSetDocument.DescriptiveNoteSet descriptiveNoteSet)
     {
         generatedSetterHelperImpl(descriptiveNoteSet, DESCRIPTIVENOTESET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -126,7 +126,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "descriptiveNote" element
          */
-        @Inject(optional=true) public void setDescriptiveNote(de.zib.museum.museumdat.DescriptiveNoteDocument.DescriptiveNote descriptiveNote)
+        public void setDescriptiveNote(de.zib.museum.museumdat.DescriptiveNoteDocument.DescriptiveNote descriptiveNote)
         {
             generatedSetterHelperImpl(descriptiveNote, DESCRIPTIVENOTE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -252,7 +252,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "sourceDescriptiveNote" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setSourceDescriptiveNoteArray(de.zib.museum.museumdat.SourceDescriptiveNoteDocument.SourceDescriptiveNote[] sourceDescriptiveNoteArray)
+        public void setSourceDescriptiveNoteArray(de.zib.museum.museumdat.SourceDescriptiveNoteDocument.SourceDescriptiveNote[] sourceDescriptiveNoteArray)
         {
             check_orphaned();
             arraySetterHelper(sourceDescriptiveNoteArray, SOURCEDESCRIPTIVENOTE$2);
@@ -261,7 +261,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "sourceDescriptiveNote" element
          */
-        @Inject(optional=true) public void setSourceDescriptiveNoteArray(int i, de.zib.museum.museumdat.SourceDescriptiveNoteDocument.SourceDescriptiveNote sourceDescriptiveNote)
+        public void setSourceDescriptiveNoteArray(int i, de.zib.museum.museumdat.SourceDescriptiveNoteDocument.SourceDescriptiveNote sourceDescriptiveNote)
         {
             generatedSetterHelperImpl(sourceDescriptiveNote, SOURCEDESCRIPTIVENOTE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -353,7 +353,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

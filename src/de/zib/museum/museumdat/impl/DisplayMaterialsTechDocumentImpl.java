@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
-import org.moosbusch.museum.inject.annotation.Language;
-import org.moosbusch.museum.inject.annotation.EncodingAnalog;
+package de.zib.museum.museumdat.impl;  
+
+
 /**
  * A document containing one displayMaterialsTech(@http://museum.zib.de/museumdat) element.
  *
@@ -55,7 +55,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "displayMaterialsTech" element
      */
-    @Inject(optional=true) public void setDisplayMaterialsTech(de.zib.museum.museumdat.DisplayMaterialsTechDocument.DisplayMaterialsTech displayMaterialsTech)
+    public void setDisplayMaterialsTech(de.zib.museum.museumdat.DisplayMaterialsTechDocument.DisplayMaterialsTech displayMaterialsTech)
     {
         generatedSetterHelperImpl(displayMaterialsTech, DISPLAYMATERIALSTECH$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -147,7 +147,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(@EncodingAnalog java.lang.String encodinganalog)
+        public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -239,7 +239,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+        public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -331,7 +331,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(@Language java.lang.String lang)
+        public void setLang( java.lang.String lang)
         {
             synchronized (monitor())
             {

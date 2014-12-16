@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one styleWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class StyleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "styleWrap" element
      */
-    @Inject(optional=true) public void setStyleWrap(de.zib.museum.museumdat.StyleWrapDocument.StyleWrap styleWrap)
+    public void setStyleWrap(de.zib.museum.museumdat.StyleWrapDocument.StyleWrap styleWrap)
     {
         generatedSetterHelperImpl(styleWrap, STYLEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class StyleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets array of all "style" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setStyleArray(de.zib.museum.museumdat.StyleDocument.Style[] styleArray)
+        public void setStyleArray(de.zib.museum.museumdat.StyleDocument.Style[] styleArray)
         {
             check_orphaned();
             arraySetterHelper(styleArray, STYLE$0);
@@ -193,7 +193,7 @@ public class StyleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets ith "style" element
          */
-        @Inject(optional=true) public void setStyleArray(int i, de.zib.museum.museumdat.StyleDocument.Style style)
+        public void setStyleArray(int i, de.zib.museum.museumdat.StyleDocument.Style style)
         {
             generatedSetterHelperImpl(style, STYLE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

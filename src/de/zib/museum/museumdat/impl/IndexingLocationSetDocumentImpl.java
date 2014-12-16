@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one indexingLocationSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IndexingLocationSetDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "indexingLocationSet" element
      */
-    @Inject(optional=true) public void setIndexingLocationSet(de.zib.museum.museumdat.IndexingLocationSetDocument.IndexingLocationSet indexingLocationSet)
+    public void setIndexingLocationSet(de.zib.museum.museumdat.IndexingLocationSetDocument.IndexingLocationSet indexingLocationSet)
     {
         generatedSetterHelperImpl(indexingLocationSet, INDEXINGLOCATIONSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -188,7 +188,7 @@ public class IndexingLocationSetDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets array of all "nameLocationSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setNameLocationSetArray(de.zib.museum.museumdat.NameLocationSetDocument.NameLocationSet[] nameLocationSetArray)
+        public void setNameLocationSetArray(de.zib.museum.museumdat.NameLocationSetDocument.NameLocationSet[] nameLocationSetArray)
         {
             check_orphaned();
             arraySetterHelper(nameLocationSetArray, NAMELOCATIONSET$0);
@@ -197,7 +197,7 @@ public class IndexingLocationSetDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets ith "nameLocationSet" element
          */
-        @Inject(optional=true) public void setNameLocationSetArray(int i, de.zib.museum.museumdat.NameLocationSetDocument.NameLocationSet nameLocationSet)
+        public void setNameLocationSetArray(int i, de.zib.museum.museumdat.NameLocationSetDocument.NameLocationSet nameLocationSet)
         {
             generatedSetterHelperImpl(nameLocationSet, NAMELOCATIONSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -289,7 +289,7 @@ public class IndexingLocationSetDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "politicalEntity" attribute
          */
-        @Inject(optional=true) public void setPoliticalEntity(java.lang.String politicalEntity)
+        public void setPoliticalEntity(java.lang.String politicalEntity)
         {
             synchronized (monitor())
             {
@@ -381,7 +381,7 @@ public class IndexingLocationSetDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "geographicalEntity" attribute
          */
-        @Inject(optional=true) public void setGeographicalEntity(java.lang.String geographicalEntity)
+        public void setGeographicalEntity(java.lang.String geographicalEntity)
         {
             synchronized (monitor())
             {

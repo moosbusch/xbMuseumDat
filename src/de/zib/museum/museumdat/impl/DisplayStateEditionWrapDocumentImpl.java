@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one displayStateEditionWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
     /**
      * Sets the "displayStateEditionWrap" element
      */
-    @Inject(optional=true) public void setDisplayStateEditionWrap(de.zib.museum.museumdat.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
+    public void setDisplayStateEditionWrap(de.zib.museum.museumdat.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
     {
         generatedSetterHelperImpl(displayStateEditionWrap, DISPLAYSTATEEDITIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -188,7 +188,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "displayState" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setDisplayStateArray(de.zib.museum.museumdat.DisplayStateDocument.DisplayState[] displayStateArray)
+        public void setDisplayStateArray(de.zib.museum.museumdat.DisplayStateDocument.DisplayState[] displayStateArray)
         {
             check_orphaned();
             arraySetterHelper(displayStateArray, DISPLAYSTATE$0);
@@ -197,7 +197,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "displayState" element
          */
-        @Inject(optional=true) public void setDisplayStateArray(int i, de.zib.museum.museumdat.DisplayStateDocument.DisplayState displayState)
+        public void setDisplayStateArray(int i, de.zib.museum.museumdat.DisplayStateDocument.DisplayState displayState)
         {
             generatedSetterHelperImpl(displayState, DISPLAYSTATE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -337,7 +337,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "displayEdition" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setDisplayEditionArray(de.zib.museum.museumdat.DisplayEditionDocument.DisplayEdition[] displayEditionArray)
+        public void setDisplayEditionArray(de.zib.museum.museumdat.DisplayEditionDocument.DisplayEdition[] displayEditionArray)
         {
             check_orphaned();
             arraySetterHelper(displayEditionArray, DISPLAYEDITION$2);
@@ -346,7 +346,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "displayEdition" element
          */
-        @Inject(optional=true) public void setDisplayEditionArray(int i, de.zib.museum.museumdat.DisplayEditionDocument.DisplayEdition displayEdition)
+        public void setDisplayEditionArray(int i, de.zib.museum.museumdat.DisplayEditionDocument.DisplayEdition displayEdition)
         {
             generatedSetterHelperImpl(displayEdition, DISPLAYEDITION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -486,7 +486,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "sourceStateEdition" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setSourceStateEditionArray(de.zib.museum.museumdat.SourceStateEditionDocument.SourceStateEdition[] sourceStateEditionArray)
+        public void setSourceStateEditionArray(de.zib.museum.museumdat.SourceStateEditionDocument.SourceStateEdition[] sourceStateEditionArray)
         {
             check_orphaned();
             arraySetterHelper(sourceStateEditionArray, SOURCESTATEEDITION$4);
@@ -495,7 +495,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "sourceStateEdition" element
          */
-        @Inject(optional=true) public void setSourceStateEditionArray(int i, de.zib.museum.museumdat.SourceStateEditionDocument.SourceStateEdition sourceStateEdition)
+        public void setSourceStateEditionArray(int i, de.zib.museum.museumdat.SourceStateEditionDocument.SourceStateEdition sourceStateEdition)
         {
             generatedSetterHelperImpl(sourceStateEdition, SOURCESTATEEDITION$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

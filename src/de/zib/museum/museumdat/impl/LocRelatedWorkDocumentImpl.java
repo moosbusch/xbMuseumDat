@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one locRelatedWork(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "locRelatedWork" element
      */
-    @Inject(optional=true) public void setLocRelatedWork(de.zib.museum.museumdat.LocRelatedWorkDocument.LocRelatedWork locRelatedWork)
+    public void setLocRelatedWork(de.zib.museum.museumdat.LocRelatedWorkDocument.LocRelatedWork locRelatedWork)
     {
         generatedSetterHelperImpl(locRelatedWork, LOCRELATEDWORK$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -153,7 +153,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "relWorkID" attribute
          */
-        @Inject(optional=true) public void setRelWorkID(java.lang.String relWorkID)
+        public void setRelWorkID(java.lang.String relWorkID)
         {
             synchronized (monitor())
             {
@@ -245,7 +245,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -337,7 +337,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "locID" attribute
          */
-        @Inject(optional=true) public void setLocID(java.lang.String locID)
+        public void setLocID(java.lang.String locID)
         {
             synchronized (monitor())
             {
@@ -429,7 +429,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "locIDtype" attribute
          */
-        @Inject(optional=true) public void setLocIDtype(java.lang.String locIDtype)
+        public void setLocIDtype(java.lang.String locIDtype)
         {
             synchronized (monitor())
             {
@@ -521,7 +521,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -613,7 +613,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+        public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -705,7 +705,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {

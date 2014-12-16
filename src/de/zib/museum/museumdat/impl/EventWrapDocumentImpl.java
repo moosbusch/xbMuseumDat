@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one eventWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "eventWrap" element
      */
-    @Inject(optional=true) public void setEventWrap(de.zib.museum.museumdat.EventWrapDocument.EventWrap eventWrap)
+    public void setEventWrap(de.zib.museum.museumdat.EventWrapDocument.EventWrap eventWrap)
     {
         generatedSetterHelperImpl(eventWrap, EVENTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -130,7 +130,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "indexingEventWrap" element
          */
-        @Inject(optional=true) public void setIndexingEventWrap(de.zib.museum.museumdat.IndexingEventWrapDocument.IndexingEventWrap indexingEventWrap)
+        public void setIndexingEventWrap(de.zib.museum.museumdat.IndexingEventWrapDocument.IndexingEventWrap indexingEventWrap)
         {
             generatedSetterHelperImpl(indexingEventWrap, INDEXINGEVENTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -194,7 +194,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "indexingMeasurementsWrap" element
          */
-        @Inject(optional=true) public void setIndexingMeasurementsWrap(de.zib.museum.museumdat.IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap indexingMeasurementsWrap)
+        public void setIndexingMeasurementsWrap(de.zib.museum.museumdat.IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap indexingMeasurementsWrap)
         {
             generatedSetterHelperImpl(indexingMeasurementsWrap, INDEXINGMEASUREMENTSWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -258,7 +258,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "indexingMaterialsTechWrap" element
          */
-        @Inject(optional=true) public void setIndexingMaterialsTechWrap(de.zib.museum.museumdat.IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap indexingMaterialsTechWrap)
+        public void setIndexingMaterialsTechWrap(de.zib.museum.museumdat.IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap indexingMaterialsTechWrap)
         {
             generatedSetterHelperImpl(indexingMaterialsTechWrap, INDEXINGMATERIALSTECHWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -322,7 +322,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "styleWrap" element
          */
-        @Inject(optional=true) public void setStyleWrap(de.zib.museum.museumdat.StyleWrapDocument.StyleWrap styleWrap)
+        public void setStyleWrap(de.zib.museum.museumdat.StyleWrapDocument.StyleWrap styleWrap)
         {
             generatedSetterHelperImpl(styleWrap, STYLEWRAP$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -386,7 +386,7 @@ public class EventWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "cultureWrap" element
          */
-        @Inject(optional=true) public void setCultureWrap(de.zib.museum.museumdat.CultureWrapDocument.CultureWrap cultureWrap)
+        public void setCultureWrap(de.zib.museum.museumdat.CultureWrapDocument.CultureWrap cultureWrap)
         {
             generatedSetterHelperImpl(cultureWrap, CULTUREWRAP$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

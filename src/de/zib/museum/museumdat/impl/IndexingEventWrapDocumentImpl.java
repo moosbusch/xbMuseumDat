@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one indexingEventWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IndexingEventWrapDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "indexingEventWrap" element
      */
-    @Inject(optional=true) public void setIndexingEventWrap(de.zib.museum.museumdat.IndexingEventWrapDocument.IndexingEventWrap indexingEventWrap)
+    public void setIndexingEventWrap(de.zib.museum.museumdat.IndexingEventWrapDocument.IndexingEventWrap indexingEventWrap)
     {
         generatedSetterHelperImpl(indexingEventWrap, INDEXINGEVENTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class IndexingEventWrapDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets array of all "indexingEventSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setIndexingEventSetArray(de.zib.museum.museumdat.IndexingEventSetDocument.IndexingEventSet[] indexingEventSetArray)
+        public void setIndexingEventSetArray(de.zib.museum.museumdat.IndexingEventSetDocument.IndexingEventSet[] indexingEventSetArray)
         {
             check_orphaned();
             arraySetterHelper(indexingEventSetArray, INDEXINGEVENTSET$0);
@@ -193,7 +193,7 @@ public class IndexingEventWrapDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets ith "indexingEventSet" element
          */
-        @Inject(optional=true) public void setIndexingEventSetArray(int i, de.zib.museum.museumdat.IndexingEventSetDocument.IndexingEventSet indexingEventSet)
+        public void setIndexingEventSetArray(int i, de.zib.museum.museumdat.IndexingEventSetDocument.IndexingEventSet indexingEventSet)
         {
             generatedSetterHelperImpl(indexingEventSet, INDEXINGEVENTSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one relationWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class RelationWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "relationWrap" element
      */
-    @Inject(optional=true) public void setRelationWrap(de.zib.museum.museumdat.RelationWrapDocument.RelationWrap relationWrap)
+    public void setRelationWrap(de.zib.museum.museumdat.RelationWrapDocument.RelationWrap relationWrap)
     {
         generatedSetterHelperImpl(relationWrap, RELATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -124,7 +124,7 @@ public class RelationWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "indexingSubjectWrap" element
          */
-        @Inject(optional=true) public void setIndexingSubjectWrap(de.zib.museum.museumdat.IndexingSubjectWrapDocument.IndexingSubjectWrap indexingSubjectWrap)
+        public void setIndexingSubjectWrap(de.zib.museum.museumdat.IndexingSubjectWrapDocument.IndexingSubjectWrap indexingSubjectWrap)
         {
             generatedSetterHelperImpl(indexingSubjectWrap, INDEXINGSUBJECTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -188,7 +188,7 @@ public class RelationWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "relatedWorksWrap" element
          */
-        @Inject(optional=true) public void setRelatedWorksWrap(de.zib.museum.museumdat.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
+        public void setRelatedWorksWrap(de.zib.museum.museumdat.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
         {
             generatedSetterHelperImpl(relatedWorksWrap, RELATEDWORKSWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

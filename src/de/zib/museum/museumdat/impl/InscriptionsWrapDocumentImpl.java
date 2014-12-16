@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one inscriptionsWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "inscriptionsWrap" element
      */
-    @Inject(optional=true) public void setInscriptionsWrap(de.zib.museum.museumdat.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
+    public void setInscriptionsWrap(de.zib.museum.museumdat.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
     {
         generatedSetterHelperImpl(inscriptionsWrap, INSCRIPTIONSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "inscriptions" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setInscriptionsArray(de.zib.museum.museumdat.InscriptionsDocument.Inscriptions[] inscriptionsArray)
+        public void setInscriptionsArray(de.zib.museum.museumdat.InscriptionsDocument.Inscriptions[] inscriptionsArray)
         {
             check_orphaned();
             arraySetterHelper(inscriptionsArray, INSCRIPTIONS$0);
@@ -193,7 +193,7 @@ public class InscriptionsWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "inscriptions" element
          */
-        @Inject(optional=true) public void setInscriptionsArray(int i, de.zib.museum.museumdat.InscriptionsDocument.Inscriptions inscriptions)
+        public void setInscriptionsArray(int i, de.zib.museum.museumdat.InscriptionsDocument.Inscriptions inscriptions)
         {
             generatedSetterHelperImpl(inscriptions, INSCRIPTIONS$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

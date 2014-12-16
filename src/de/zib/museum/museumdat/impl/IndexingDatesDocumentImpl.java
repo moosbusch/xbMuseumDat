@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one indexingDates(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IndexingDatesDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "indexingDates" element
      */
-    @Inject(optional=true) public void setIndexingDates(de.zib.museum.museumdat.IndexingDatesDocument.IndexingDates indexingDates)
+    public void setIndexingDates(de.zib.museum.museumdat.IndexingDatesDocument.IndexingDates indexingDates)
     {
         generatedSetterHelperImpl(indexingDates, INDEXINGDATES$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class IndexingDatesDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets the "earliestDate" element
          */
-        @Inject(optional=true) public void setEarliestDate(de.zib.museum.museumdat.EarliestDateDocument.EarliestDate earliestDate)
+        public void setEarliestDate(de.zib.museum.museumdat.EarliestDateDocument.EarliestDate earliestDate)
         {
             generatedSetterHelperImpl(earliestDate, EARLIESTDATE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -152,7 +152,7 @@ public class IndexingDatesDocumentImpl extends org.apache.xmlbeans.impl.values.X
         /**
          * Sets the "latestDate" element
          */
-        @Inject(optional=true) public void setLatestDate(de.zib.museum.museumdat.LatestDateDocument.LatestDate latestDate)
+        public void setLatestDate(de.zib.museum.museumdat.LatestDateDocument.LatestDate latestDate)
         {
             generatedSetterHelperImpl(latestDate, LATESTDATE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

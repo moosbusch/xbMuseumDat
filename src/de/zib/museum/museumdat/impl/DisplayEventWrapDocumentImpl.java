@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one displayEventWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class DisplayEventWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "displayEventWrap" element
      */
-    @Inject(optional=true) public void setDisplayEventWrap(de.zib.museum.museumdat.DisplayEventWrapDocument.DisplayEventWrap displayEventWrap)
+    public void setDisplayEventWrap(de.zib.museum.museumdat.DisplayEventWrapDocument.DisplayEventWrap displayEventWrap)
     {
         generatedSetterHelperImpl(displayEventWrap, DISPLAYEVENTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class DisplayEventWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "displayEvent" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setDisplayEventArray(de.zib.museum.museumdat.DisplayEventDocument.DisplayEvent[] displayEventArray)
+        public void setDisplayEventArray(de.zib.museum.museumdat.DisplayEventDocument.DisplayEvent[] displayEventArray)
         {
             check_orphaned();
             arraySetterHelper(displayEventArray, DISPLAYEVENT$0);
@@ -193,7 +193,7 @@ public class DisplayEventWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "displayEvent" element
          */
-        @Inject(optional=true) public void setDisplayEventArray(int i, de.zib.museum.museumdat.DisplayEventDocument.DisplayEvent displayEvent)
+        public void setDisplayEventArray(int i, de.zib.museum.museumdat.DisplayEventDocument.DisplayEvent displayEvent)
         {
             generatedSetterHelperImpl(displayEvent, DISPLAYEVENT$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

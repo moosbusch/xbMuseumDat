@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one descriptiveMetadata(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "descriptiveMetadata" element
      */
-    @Inject(optional=true) public void setDescriptiveMetadata(de.zib.museum.museumdat.DescriptiveMetadataDocument.DescriptiveMetadata descriptiveMetadata)
+    public void setDescriptiveMetadata(de.zib.museum.museumdat.DescriptiveMetadataDocument.DescriptiveMetadata descriptiveMetadata)
     {
         generatedSetterHelperImpl(descriptiveMetadata, DESCRIPTIVEMETADATA$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -118,7 +118,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "objectClassificationWrap" element
          */
-        @Inject(optional=true) public void setObjectClassificationWrap(de.zib.museum.museumdat.ObjectClassificationWrapDocument.ObjectClassificationWrap objectClassificationWrap)
+        public void setObjectClassificationWrap(de.zib.museum.museumdat.ObjectClassificationWrapDocument.ObjectClassificationWrap objectClassificationWrap)
         {
             generatedSetterHelperImpl(objectClassificationWrap, OBJECTCLASSIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -158,7 +158,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "identificationWrap" element
          */
-        @Inject(optional=true) public void setIdentificationWrap(de.zib.museum.museumdat.IdentificationWrapDocument.IdentificationWrap identificationWrap)
+        public void setIdentificationWrap(de.zib.museum.museumdat.IdentificationWrapDocument.IdentificationWrap identificationWrap)
         {
             generatedSetterHelperImpl(identificationWrap, IDENTIFICATIONWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -210,7 +210,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "descriptionWrap" element
          */
-        @Inject(optional=true) public void setDescriptionWrap(de.zib.museum.museumdat.DescriptionWrapDocument.DescriptionWrap descriptionWrap)
+        public void setDescriptionWrap(de.zib.museum.museumdat.DescriptionWrapDocument.DescriptionWrap descriptionWrap)
         {
             generatedSetterHelperImpl(descriptionWrap, DESCRIPTIONWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -274,7 +274,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "eventWrap" element
          */
-        @Inject(optional=true) public void setEventWrap(de.zib.museum.museumdat.EventWrapDocument.EventWrap eventWrap)
+        public void setEventWrap(de.zib.museum.museumdat.EventWrapDocument.EventWrap eventWrap)
         {
             generatedSetterHelperImpl(eventWrap, EVENTWRAP$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -338,7 +338,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "relationWrap" element
          */
-        @Inject(optional=true) public void setRelationWrap(de.zib.museum.museumdat.RelationWrapDocument.RelationWrap relationWrap)
+        public void setRelationWrap(de.zib.museum.museumdat.RelationWrapDocument.RelationWrap relationWrap)
         {
             generatedSetterHelperImpl(relationWrap, RELATIONWRAP$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

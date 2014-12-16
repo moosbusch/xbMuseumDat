@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one scaleMeasurements(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class ScaleMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "scaleMeasurements" element
      */
-    @Inject(optional=true) public void setScaleMeasurements(de.zib.museum.museumdat.ScaleMeasurementsDocument.ScaleMeasurements scaleMeasurements)
+    public void setScaleMeasurements(de.zib.museum.museumdat.ScaleMeasurementsDocument.ScaleMeasurements scaleMeasurements)
     {
         generatedSetterHelperImpl(scaleMeasurements, SCALEMEASUREMENTS$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -145,7 +145,7 @@ public class ScaleMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -237,7 +237,7 @@ public class ScaleMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+        public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -329,7 +329,7 @@ public class ScaleMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {

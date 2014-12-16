@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one repositoryWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class RepositoryWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "repositoryWrap" element
      */
-    @Inject(optional=true) public void setRepositoryWrap(de.zib.museum.museumdat.RepositoryWrapDocument.RepositoryWrap repositoryWrap)
+    public void setRepositoryWrap(de.zib.museum.museumdat.RepositoryWrapDocument.RepositoryWrap repositoryWrap)
     {
         generatedSetterHelperImpl(repositoryWrap, REPOSITORYWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class RepositoryWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "repositorySet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRepositorySetArray(de.zib.museum.museumdat.RepositorySetDocument.RepositorySet[] repositorySetArray)
+        public void setRepositorySetArray(de.zib.museum.museumdat.RepositorySetDocument.RepositorySet[] repositorySetArray)
         {
             check_orphaned();
             arraySetterHelper(repositorySetArray, REPOSITORYSET$0);
@@ -193,7 +193,7 @@ public class RepositoryWrapDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "repositorySet" element
          */
-        @Inject(optional=true) public void setRepositorySetArray(int i, de.zib.museum.museumdat.RepositorySetDocument.RepositorySet repositorySet)
+        public void setRepositorySetArray(int i, de.zib.museum.museumdat.RepositorySetDocument.RepositorySet repositorySet)
         {
             generatedSetterHelperImpl(repositorySet, REPOSITORYSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

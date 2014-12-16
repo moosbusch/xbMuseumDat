@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one type(@http://museum.zib.de/museumdat) attribute.
  *
@@ -79,7 +79,7 @@ public class TypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(java.lang.String type)
+    public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {

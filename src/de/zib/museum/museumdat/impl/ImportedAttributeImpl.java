@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one imported(@http://museum.zib.de/museumdat) attribute.
  *
@@ -87,7 +87,7 @@ public class ImportedAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "imported" attribute
      */
-    @Inject(optional=true) public void setImported(de.zib.museum.museumdat.ImportedAttribute.Imported.Enum imported)
+    public void setImported(de.zib.museum.museumdat.ImportedAttribute.Imported.Enum imported)
     {
         synchronized (monitor())
         {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one locID(@http://museum.zib.de/museumdat) attribute.
  *
@@ -79,7 +79,7 @@ public class LocIDAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "locID" attribute
      */
-    @Inject(optional=true) public void setLocID(java.lang.String locID)
+    public void setLocID(java.lang.String locID)
     {
         synchronized (monitor())
         {

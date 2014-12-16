@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one descriptionWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "descriptionWrap" element
      */
-    @Inject(optional=true) public void setDescriptionWrap(de.zib.museum.museumdat.DescriptionWrapDocument.DescriptionWrap descriptionWrap)
+    public void setDescriptionWrap(de.zib.museum.museumdat.DescriptionWrapDocument.DescriptionWrap descriptionWrap)
     {
         generatedSetterHelperImpl(descriptionWrap, DESCRIPTIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -136,7 +136,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "displayCreator" element
          */
-        @Inject(optional=true) public void setDisplayCreator(de.zib.museum.museumdat.DisplayCreatorDocument.DisplayCreator displayCreator)
+        public void setDisplayCreator(de.zib.museum.museumdat.DisplayCreatorDocument.DisplayCreator displayCreator)
         {
             generatedSetterHelperImpl(displayCreator, DISPLAYCREATOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -200,7 +200,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "displayCreationDate" element
          */
-        @Inject(optional=true) public void setDisplayCreationDate(de.zib.museum.museumdat.DisplayCreationDateDocument.DisplayCreationDate displayCreationDate)
+        public void setDisplayCreationDate(de.zib.museum.museumdat.DisplayCreationDateDocument.DisplayCreationDate displayCreationDate)
         {
             generatedSetterHelperImpl(displayCreationDate, DISPLAYCREATIONDATE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -264,7 +264,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "displayCreationLocation" element
          */
-        @Inject(optional=true) public void setDisplayCreationLocation(de.zib.museum.museumdat.DisplayCreationLocationDocument.DisplayCreationLocation displayCreationLocation)
+        public void setDisplayCreationLocation(de.zib.museum.museumdat.DisplayCreationLocationDocument.DisplayCreationLocation displayCreationLocation)
         {
             generatedSetterHelperImpl(displayCreationLocation, DISPLAYCREATIONLOCATION$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -328,7 +328,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "displayMeasurements" element
          */
-        @Inject(optional=true) public void setDisplayMeasurements(de.zib.museum.museumdat.DisplayMeasurementsDocument.DisplayMeasurements displayMeasurements)
+        public void setDisplayMeasurements(de.zib.museum.museumdat.DisplayMeasurementsDocument.DisplayMeasurements displayMeasurements)
         {
             generatedSetterHelperImpl(displayMeasurements, DISPLAYMEASUREMENTS$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -392,7 +392,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "displayMaterialsTech" element
          */
-        @Inject(optional=true) public void setDisplayMaterialsTech(de.zib.museum.museumdat.DisplayMaterialsTechDocument.DisplayMaterialsTech displayMaterialsTech)
+        public void setDisplayMaterialsTech(de.zib.museum.museumdat.DisplayMaterialsTechDocument.DisplayMaterialsTech displayMaterialsTech)
         {
             generatedSetterHelperImpl(displayMaterialsTech, DISPLAYMATERIALSTECH$8, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -456,7 +456,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "displayStateEditionWrap" element
          */
-        @Inject(optional=true) public void setDisplayStateEditionWrap(de.zib.museum.museumdat.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
+        public void setDisplayStateEditionWrap(de.zib.museum.museumdat.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
         {
             generatedSetterHelperImpl(displayStateEditionWrap, DISPLAYSTATEEDITIONWRAP$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -520,7 +520,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "displayEventWrap" element
          */
-        @Inject(optional=true) public void setDisplayEventWrap(de.zib.museum.museumdat.DisplayEventWrapDocument.DisplayEventWrap displayEventWrap)
+        public void setDisplayEventWrap(de.zib.museum.museumdat.DisplayEventWrapDocument.DisplayEventWrap displayEventWrap)
         {
             generatedSetterHelperImpl(displayEventWrap, DISPLAYEVENTWRAP$12, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -584,7 +584,7 @@ public class DescriptionWrapDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "descriptiveNoteWrap" element
          */
-        @Inject(optional=true) public void setDescriptiveNoteWrap(de.zib.museum.museumdat.DescriptiveNoteWrapDocument.DescriptiveNoteWrap descriptiveNoteWrap)
+        public void setDescriptiveNoteWrap(de.zib.museum.museumdat.DescriptiveNoteWrapDocument.DescriptiveNoteWrap descriptiveNoteWrap)
         {
             generatedSetterHelperImpl(descriptiveNoteWrap, DESCRIPTIVENOTEWRAP$14, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

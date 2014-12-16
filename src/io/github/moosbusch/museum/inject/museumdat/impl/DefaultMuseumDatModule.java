@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.museumdat.impl;
+package io.github.moosbusch.museum.inject.museumdat.impl;
 
 import com.google.inject.Provides;
 import de.zib.museum.museumdat.AdministrativeMetadataDocument;
@@ -251,47 +251,17 @@ import de.zib.museum.museumdat.VitalDatesActorDocument;
 import de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor;
 import de.zib.museum.museumdat.WorkIDDocument;
 import de.zib.museum.museumdat.WorkIDDocument.WorkID;
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.document.museumdat.MuseumDatXmlDocument;
-import org.moosbusch.museum.document.museumdat.impl.DefaultMuseumDatXmlDocument;
-import org.moosbusch.museum.inject.annotation.EncodingAnalog;
-import org.moosbusch.museum.inject.annotation.Language;
-import org.moosbusch.museum.inject.annotation.LanguageEncoding;
-import org.moosbusch.museum.inject.annotation.RelatedEncoding;
-import org.moosbusch.museum.inject.museumdat.spi.AbstractMuseumDatModule;
+import io.github.moosbusch.museum.document.museumdat.MuseumDatXmlDocument;
+import io.github.moosbusch.museum.document.museumdat.impl.DefaultMuseumDatObjectFactory;
+import io.github.moosbusch.museum.document.museumdat.impl.DefaultMuseumDatXmlDocument;
+import io.github.moosbusch.museum.inject.museumdat.MuseumDatModule;
+import io.github.moosbusch.museum.inject.spi.AbstractMuseumXmlModule;
 
 /**
  *
  * @author moosbusch
  */
-public class DefaultMuseumDatModule extends AbstractMuseumDatModule {
-
-    @Override
-    protected void configureImpl() {
-        binder().bind(String.class).annotatedWith(Language.class).toInstance(
-                getLanguage());
-        binder().bind(String.class).annotatedWith(LanguageEncoding.class).toInstance(
-                getLanguageEncoding());
-        binder().bind(String.class).annotatedWith(RelatedEncoding.class).toInstance(
-                getRelatedEncoding());
-        binder().bind(String.class).annotatedWith(EncodingAnalog.class).toInstance(
-                getEncodingAnalog());
-    }
-
-    @Override
-    protected String createRelatedEncoding() {
-        return MuseumXmlDocument.DEFAULT_RELATED_ENCODING;
-    }
-
-    @Override
-    protected String createLanguageEncoding() {
-        return MuseumDatXmlDocument.DEFAULT_LANGUAGE_ENCODING;
-    }
-
-    @Override
-    protected String createEncodingAnalog() {
-        return MuseumDatXmlDocument.DEFAULT_ENCODING_ANALOG;
-    }
+public class DefaultMuseumDatModule extends AbstractMuseumXmlModule implements MuseumDatModule {
 
     @Provides
     @Override

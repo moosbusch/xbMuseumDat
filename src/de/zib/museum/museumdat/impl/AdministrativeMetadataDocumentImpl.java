@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 
 /**
  * A document containing one administrativeMetadata(@http://museum.zib.de/museumdat) element.
@@ -54,7 +54,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "administrativeMetadata" element
      */
-    @Inject(optional=true) public void setAdministrativeMetadata(de.zib.museum.museumdat.AdministrativeMetadataDocument.AdministrativeMetadata administrativeMetadata)
+    public void setAdministrativeMetadata(de.zib.museum.museumdat.AdministrativeMetadataDocument.AdministrativeMetadata administrativeMetadata)
     {
         generatedSetterHelperImpl(administrativeMetadata, ADMINISTRATIVEMETADATA$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -189,7 +189,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets array of all "rightsWork" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRightsWorkArray(de.zib.museum.museumdat.RightsWorkDocument.RightsWork[] rightsWorkArray)
+        public void setRightsWorkArray(de.zib.museum.museumdat.RightsWorkDocument.RightsWork[] rightsWorkArray)
         {
             check_orphaned();
             arraySetterHelper(rightsWorkArray, RIGHTSWORK$0);
@@ -198,7 +198,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets ith "rightsWork" element
          */
-        @Inject(optional=true) public void setRightsWorkArray(int i, de.zib.museum.museumdat.RightsWorkDocument.RightsWork rightsWork)
+        public void setRightsWorkArray(int i, de.zib.museum.museumdat.RightsWorkDocument.RightsWork rightsWork)
         {
             generatedSetterHelperImpl(rightsWork, RIGHTSWORK$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -264,7 +264,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets the "recordWrap" element
          */
-        @Inject(optional=true) public void setRecordWrap(de.zib.museum.museumdat.RecordWrapDocument.RecordWrap recordWrap)
+        public void setRecordWrap(de.zib.museum.museumdat.RecordWrapDocument.RecordWrap recordWrap)
         {
             generatedSetterHelperImpl(recordWrap, RECORDWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -316,7 +316,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets the "resourceWrap" element
          */
-        @Inject(optional=true) public void setResourceWrap(de.zib.museum.museumdat.ResourceWrapDocument.ResourceWrap resourceWrap)
+        public void setResourceWrap(de.zib.museum.museumdat.ResourceWrapDocument.ResourceWrap resourceWrap)
         {
             generatedSetterHelperImpl(resourceWrap, RESOURCEWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

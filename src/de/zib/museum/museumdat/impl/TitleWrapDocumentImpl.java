@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one titleWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "titleWrap" element
      */
-    @Inject(optional=true) public void setTitleWrap(de.zib.museum.museumdat.TitleWrapDocument.TitleWrap titleWrap)
+    public void setTitleWrap(de.zib.museum.museumdat.TitleWrapDocument.TitleWrap titleWrap)
     {
         generatedSetterHelperImpl(titleWrap, TITLEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets array of all "titleSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setTitleSetArray(de.zib.museum.museumdat.TitleSetDocument.TitleSet[] titleSetArray)
+        public void setTitleSetArray(de.zib.museum.museumdat.TitleSetDocument.TitleSet[] titleSetArray)
         {
             check_orphaned();
             arraySetterHelper(titleSetArray, TITLESET$0);
@@ -193,7 +193,7 @@ public class TitleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets ith "titleSet" element
          */
-        @Inject(optional=true) public void setTitleSetArray(int i, de.zib.museum.museumdat.TitleSetDocument.TitleSet titleSet)
+        public void setTitleSetArray(int i, de.zib.museum.museumdat.TitleSetDocument.TitleSet titleSet)
         {
             generatedSetterHelperImpl(titleSet, TITLESET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

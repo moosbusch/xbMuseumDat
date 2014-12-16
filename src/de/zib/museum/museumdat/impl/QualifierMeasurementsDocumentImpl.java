@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one qualifierMeasurements(@http://museum.zib.de/museumdat) element.
  *
@@ -67,7 +67,7 @@ public class QualifierMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets the "qualifierMeasurements" element
      */
-    @Inject(optional=true) public void setQualifierMeasurements(java.lang.String qualifierMeasurements)
+    public void setQualifierMeasurements(java.lang.String qualifierMeasurements)
     {
         synchronized (monitor())
         {

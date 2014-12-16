@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one cultureWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class CultureWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "cultureWrap" element
      */
-    @Inject(optional=true) public void setCultureWrap(de.zib.museum.museumdat.CultureWrapDocument.CultureWrap cultureWrap)
+    public void setCultureWrap(de.zib.museum.museumdat.CultureWrapDocument.CultureWrap cultureWrap)
     {
         generatedSetterHelperImpl(cultureWrap, CULTUREWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class CultureWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "culture" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setCultureArray(de.zib.museum.museumdat.CultureDocument.Culture[] cultureArray)
+        public void setCultureArray(de.zib.museum.museumdat.CultureDocument.Culture[] cultureArray)
         {
             check_orphaned();
             arraySetterHelper(cultureArray, CULTURE$0);
@@ -193,7 +193,7 @@ public class CultureWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "culture" element
          */
-        @Inject(optional=true) public void setCultureArray(int i, de.zib.museum.museumdat.CultureDocument.Culture culture)
+        public void setCultureArray(int i, de.zib.museum.museumdat.CultureDocument.Culture culture)
         {
             generatedSetterHelperImpl(culture, CULTURE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

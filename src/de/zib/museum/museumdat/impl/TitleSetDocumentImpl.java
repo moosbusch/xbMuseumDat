@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one titleSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "titleSet" element
      */
-    @Inject(optional=true) public void setTitleSet(de.zib.museum.museumdat.TitleSetDocument.TitleSet titleSet)
+    public void setTitleSet(de.zib.museum.museumdat.TitleSetDocument.TitleSet titleSet)
     {
         generatedSetterHelperImpl(titleSet, TITLESET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "title" element
          */
-        @Inject(optional=true) public void setTitle(de.zib.museum.museumdat.TitleDocument.Title title)
+        public void setTitle(de.zib.museum.museumdat.TitleDocument.Title title)
         {
             generatedSetterHelperImpl(title, TITLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -226,7 +226,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets array of all "sourceTitle" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setSourceTitleArray(de.zib.museum.museumdat.SourceTitleDocument.SourceTitle[] sourceTitleArray)
+        public void setSourceTitleArray(de.zib.museum.museumdat.SourceTitleDocument.SourceTitle[] sourceTitleArray)
         {
             check_orphaned();
             arraySetterHelper(sourceTitleArray, SOURCETITLE$2);
@@ -235,7 +235,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets ith "sourceTitle" element
          */
-        @Inject(optional=true) public void setSourceTitleArray(int i, de.zib.museum.museumdat.SourceTitleDocument.SourceTitle sourceTitle)
+        public void setSourceTitleArray(int i, de.zib.museum.museumdat.SourceTitleDocument.SourceTitle sourceTitle)
         {
             generatedSetterHelperImpl(sourceTitle, SOURCETITLE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

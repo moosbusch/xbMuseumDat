@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one classificationWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "classificationWrap" element
      */
-    @Inject(optional=true) public void setClassificationWrap(de.zib.museum.museumdat.ClassificationWrapDocument.ClassificationWrap classificationWrap)
+    public void setClassificationWrap(de.zib.museum.museumdat.ClassificationWrapDocument.ClassificationWrap classificationWrap)
     {
         generatedSetterHelperImpl(classificationWrap, CLASSIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "classification" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setClassificationArray(de.zib.museum.museumdat.ClassificationDocument.Classification[] classificationArray)
+        public void setClassificationArray(de.zib.museum.museumdat.ClassificationDocument.Classification[] classificationArray)
         {
             check_orphaned();
             arraySetterHelper(classificationArray, CLASSIFICATION$0);
@@ -193,7 +193,7 @@ public class ClassificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "classification" element
          */
-        @Inject(optional=true) public void setClassificationArray(int i, de.zib.museum.museumdat.ClassificationDocument.Classification classification)
+        public void setClassificationArray(int i, de.zib.museum.museumdat.ClassificationDocument.Classification classification)
         {
             generatedSetterHelperImpl(classification, CLASSIFICATION$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

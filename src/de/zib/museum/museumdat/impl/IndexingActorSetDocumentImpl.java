@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one indexingActorSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "indexingActorSet" element
      */
-    @Inject(optional=true) public void setIndexingActorSet(de.zib.museum.museumdat.IndexingActorSetDocument.IndexingActorSet indexingActorSet)
+    public void setIndexingActorSet(de.zib.museum.museumdat.IndexingActorSetDocument.IndexingActorSet indexingActorSet)
     {
         generatedSetterHelperImpl(indexingActorSet, INDEXINGACTORSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -196,7 +196,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "nameActorSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setNameActorSetArray(de.zib.museum.museumdat.NameActorSetDocument.NameActorSet[] nameActorSetArray)
+        public void setNameActorSetArray(de.zib.museum.museumdat.NameActorSetDocument.NameActorSet[] nameActorSetArray)
         {
             check_orphaned();
             arraySetterHelper(nameActorSetArray, NAMEACTORSET$0);
@@ -205,7 +205,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "nameActorSet" element
          */
-        @Inject(optional=true) public void setNameActorSetArray(int i, de.zib.museum.museumdat.NameActorSetDocument.NameActorSet nameActorSet)
+        public void setNameActorSetArray(int i, de.zib.museum.museumdat.NameActorSetDocument.NameActorSet nameActorSet)
         {
             generatedSetterHelperImpl(nameActorSet, NAMEACTORSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -345,7 +345,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "nationalityActor" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setNationalityActorArray(de.zib.museum.museumdat.NationalityActorDocument.NationalityActor[] nationalityActorArray)
+        public void setNationalityActorArray(de.zib.museum.museumdat.NationalityActorDocument.NationalityActor[] nationalityActorArray)
         {
             check_orphaned();
             arraySetterHelper(nationalityActorArray, NATIONALITYACTOR$2);
@@ -354,7 +354,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "nationalityActor" element
          */
-        @Inject(optional=true) public void setNationalityActorArray(int i, de.zib.museum.museumdat.NationalityActorDocument.NationalityActor nationalityActor)
+        public void setNationalityActorArray(int i, de.zib.museum.museumdat.NationalityActorDocument.NationalityActor nationalityActor)
         {
             generatedSetterHelperImpl(nationalityActor, NATIONALITYACTOR$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -494,7 +494,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "vitalDatesActor" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setVitalDatesActorArray(de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor[] vitalDatesActorArray)
+        public void setVitalDatesActorArray(de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor[] vitalDatesActorArray)
         {
             check_orphaned();
             arraySetterHelper(vitalDatesActorArray, VITALDATESACTOR$4);
@@ -503,7 +503,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "vitalDatesActor" element
          */
-        @Inject(optional=true) public void setVitalDatesActorArray(int i, de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor vitalDatesActor)
+        public void setVitalDatesActorArray(int i, de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor vitalDatesActor)
         {
             generatedSetterHelperImpl(vitalDatesActor, VITALDATESACTOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -581,7 +581,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "genderActor" element
          */
-        @Inject(optional=true) public void setGenderActor(de.zib.museum.museumdat.GenderActorDocument.GenderActor genderActor)
+        public void setGenderActor(de.zib.museum.museumdat.GenderActorDocument.GenderActor genderActor)
         {
             generatedSetterHelperImpl(genderActor, GENDERACTOR$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -707,7 +707,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "roleActor" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRoleActorArray(de.zib.museum.museumdat.RoleActorDocument.RoleActor[] roleActorArray)
+        public void setRoleActorArray(de.zib.museum.museumdat.RoleActorDocument.RoleActor[] roleActorArray)
         {
             check_orphaned();
             arraySetterHelper(roleActorArray, ROLEACTOR$8);
@@ -716,7 +716,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "roleActor" element
          */
-        @Inject(optional=true) public void setRoleActorArray(int i, de.zib.museum.museumdat.RoleActorDocument.RoleActor roleActor)
+        public void setRoleActorArray(int i, de.zib.museum.museumdat.RoleActorDocument.RoleActor roleActor)
         {
             generatedSetterHelperImpl(roleActor, ROLEACTOR$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -937,7 +937,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "attributionQualifierActor" element
          */
-        @Inject(optional=true) public void setAttributionQualifierActorArray(java.lang.String[] attributionQualifierActorArray)
+        public void setAttributionQualifierActorArray(java.lang.String[] attributionQualifierActorArray)
         {
             synchronized (monitor())
             {
@@ -949,7 +949,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "attributionQualifierActor" element
          */
-        @Inject(optional=true) public void setAttributionQualifierActorArray(int i, java.lang.String attributionQualifierActor)
+        public void setAttributionQualifierActorArray(int i, java.lang.String attributionQualifierActor)
         {
             synchronized (monitor())
             {
@@ -1157,7 +1157,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "extentActor" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setExtentActorArray(de.zib.museum.museumdat.ExtentActorDocument.ExtentActor[] extentActorArray)
+        public void setExtentActorArray(de.zib.museum.museumdat.ExtentActorDocument.ExtentActor[] extentActorArray)
         {
             check_orphaned();
             arraySetterHelper(extentActorArray, EXTENTACTOR$12);
@@ -1166,7 +1166,7 @@ public class IndexingActorSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "extentActor" element
          */
-        @Inject(optional=true) public void setExtentActorArray(int i, de.zib.museum.museumdat.ExtentActorDocument.ExtentActor extentActor)
+        public void setExtentActorArray(int i, de.zib.museum.museumdat.ExtentActorDocument.ExtentActor extentActor)
         {
             generatedSetterHelperImpl(extentActor, EXTENTACTOR$12, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

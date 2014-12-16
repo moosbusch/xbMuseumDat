@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one identificationWrap(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class IdentificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "identificationWrap" element
      */
-    @Inject(optional=true) public void setIdentificationWrap(de.zib.museum.museumdat.IdentificationWrapDocument.IdentificationWrap identificationWrap)
+    public void setIdentificationWrap(de.zib.museum.museumdat.IdentificationWrapDocument.IdentificationWrap identificationWrap)
     {
         generatedSetterHelperImpl(identificationWrap, IDENTIFICATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -114,7 +114,7 @@ public class IdentificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "titleWrap" element
          */
-        @Inject(optional=true) public void setTitleWrap(de.zib.museum.museumdat.TitleWrapDocument.TitleWrap titleWrap)
+        public void setTitleWrap(de.zib.museum.museumdat.TitleWrapDocument.TitleWrap titleWrap)
         {
             generatedSetterHelperImpl(titleWrap, TITLEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -166,7 +166,7 @@ public class IdentificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "inscriptionsWrap" element
          */
-        @Inject(optional=true) public void setInscriptionsWrap(de.zib.museum.museumdat.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
+        public void setInscriptionsWrap(de.zib.museum.museumdat.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
         {
             generatedSetterHelperImpl(inscriptionsWrap, INSCRIPTIONSWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -230,7 +230,7 @@ public class IdentificationWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "repositoryWrap" element
          */
-        @Inject(optional=true) public void setRepositoryWrap(de.zib.museum.museumdat.RepositoryWrapDocument.RepositoryWrap repositoryWrap)
+        public void setRepositoryWrap(de.zib.museum.museumdat.RepositoryWrapDocument.RepositoryWrap repositoryWrap)
         {
             generatedSetterHelperImpl(repositoryWrap, REPOSITORYWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one lang(@http://museum.zib.de/museumdat) attribute.
  *
@@ -79,7 +79,7 @@ public class LangAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "lang" attribute
      */
-    @Inject(optional=true) public void setLang(java.lang.String lang)
+    public void setLang(java.lang.String lang)
     {
         synchronized (monitor())
         {

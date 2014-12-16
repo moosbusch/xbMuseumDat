@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one classification(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "classification" element
      */
-    @Inject(optional=true) public void setClassification(de.zib.museum.museumdat.ClassificationDocument.Classification classification)
+    public void setClassification(de.zib.museum.museumdat.ClassificationDocument.Classification classification)
     {
         generatedSetterHelperImpl(classification, CLASSIFICATION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -151,7 +151,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -243,7 +243,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "termsourceID" attribute
          */
-        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
+        public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {
@@ -343,7 +343,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "imported" attribute
          */
-        @Inject(optional=true) public void setImported(de.zib.museum.museumdat.ImportedAttribute.Imported.Enum imported)
+        public void setImported(de.zib.museum.museumdat.ImportedAttribute.Imported.Enum imported)
         {
             synchronized (monitor())
             {
@@ -435,7 +435,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -527,7 +527,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+        public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -619,7 +619,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {

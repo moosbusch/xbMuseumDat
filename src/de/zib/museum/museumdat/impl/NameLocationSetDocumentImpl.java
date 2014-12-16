@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one nameLocationSet(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class NameLocationSetDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "nameLocationSet" element
      */
-    @Inject(optional=true) public void setNameLocationSet(de.zib.museum.museumdat.NameLocationSetDocument.NameLocationSet nameLocationSet)
+    public void setNameLocationSet(de.zib.museum.museumdat.NameLocationSetDocument.NameLocationSet nameLocationSet)
     {
         generatedSetterHelperImpl(nameLocationSet, NAMELOCATIONSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class NameLocationSetDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "nameLocation" element
          */
-        @Inject(optional=true) public void setNameLocation(de.zib.museum.museumdat.NameLocationDocument.NameLocation nameLocation)
+        public void setNameLocation(de.zib.museum.museumdat.NameLocationDocument.NameLocation nameLocation)
         {
             generatedSetterHelperImpl(nameLocation, NAMELOCATION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -226,7 +226,7 @@ public class NameLocationSetDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets array of all "sourceNameLocation" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setSourceNameLocationArray(de.zib.museum.museumdat.SourceNameLocationDocument.SourceNameLocation[] sourceNameLocationArray)
+        public void setSourceNameLocationArray(de.zib.museum.museumdat.SourceNameLocationDocument.SourceNameLocation[] sourceNameLocationArray)
         {
             check_orphaned();
             arraySetterHelper(sourceNameLocationArray, SOURCENAMELOCATION$2);
@@ -235,7 +235,7 @@ public class NameLocationSetDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets ith "sourceNameLocation" element
          */
-        @Inject(optional=true) public void setSourceNameLocationArray(int i, de.zib.museum.museumdat.SourceNameLocationDocument.SourceNameLocation sourceNameLocation)
+        public void setSourceNameLocationArray(int i, de.zib.museum.museumdat.SourceNameLocationDocument.SourceNameLocation sourceNameLocation)
         {
             generatedSetterHelperImpl(sourceNameLocation, SOURCENAMELOCATION$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

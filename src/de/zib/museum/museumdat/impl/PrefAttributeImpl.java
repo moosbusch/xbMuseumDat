@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one pref(@http://museum.zib.de/museumdat) attribute.
  *
@@ -79,7 +79,7 @@ public class PrefAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "pref" attribute
      */
-    @Inject(optional=true) public void setPref(de.zib.museum.museumdat.PrefAttribute.Pref.Enum pref)
+    public void setPref(de.zib.museum.museumdat.PrefAttribute.Pref.Enum pref)
     {
         synchronized (monitor())
         {

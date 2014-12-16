@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one attributionQualifierActor(@http://museum.zib.de/museumdat) element.
  *
@@ -67,7 +67,7 @@ public class AttributionQualifierActorDocumentImpl extends org.apache.xmlbeans.i
     /**
      * Sets the "attributionQualifierActor" element
      */
-    @Inject(optional=true) public void setAttributionQualifierActor(java.lang.String attributionQualifierActor)
+    public void setAttributionQualifierActor(java.lang.String attributionQualifierActor)
     {
         synchronized (monitor())
         {

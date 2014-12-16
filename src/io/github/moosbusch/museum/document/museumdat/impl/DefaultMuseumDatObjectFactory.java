@@ -13,11 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.museumdat.impl;
+package io.github.moosbusch.museum.document.museumdat.impl;
 
 import de.zib.museum.museumdat.MuseumdatWrapDocument;
-import org.moosbusch.museum.inject.spi.AbstractMuseumXmlObjectFactory;
-import org.moosbusch.museum.inject.museumdat.MuseumDatModule;
+import io.github.moosbusch.museum.document.spi.AbstractMuseumXmlObjectFactory;
+import io.github.moosbusch.museum.inject.museumdat.MuseumDatModule;
+import io.github.moosbusch.museum.inject.museumdat.impl.DefaultMuseumDatModule;
 
 /**
  *
@@ -31,7 +32,7 @@ public class DefaultMuseumDatObjectFactory extends AbstractMuseumXmlObjectFactor
     }
 
     @Override
-    public MuseumdatWrapDocument createRootWrapper() {
+    public MuseumdatWrapDocument createRootWrapperElement() {
         return createTypedObject(MuseumdatWrapDocument.class);
     }
 }

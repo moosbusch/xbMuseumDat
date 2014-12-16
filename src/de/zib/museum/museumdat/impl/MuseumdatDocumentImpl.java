@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one museumdat(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class MuseumdatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "museumdat" element
      */
-    @Inject(optional=true) public void setMuseumdat(de.zib.museum.museumdat.MuseumdatDocument.Museumdat museumdat)
+    public void setMuseumdat(de.zib.museum.museumdat.MuseumdatDocument.Museumdat museumdat)
     {
         generatedSetterHelperImpl(museumdat, MUSEUMDAT$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class MuseumdatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "descriptiveMetadata" element
          */
-        @Inject(optional=true) public void setDescriptiveMetadata(de.zib.museum.museumdat.DescriptiveMetadataDocument.DescriptiveMetadata descriptiveMetadata)
+        public void setDescriptiveMetadata(de.zib.museum.museumdat.DescriptiveMetadataDocument.DescriptiveMetadata descriptiveMetadata)
         {
             generatedSetterHelperImpl(descriptiveMetadata, DESCRIPTIVEMETADATA$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -152,7 +152,7 @@ public class MuseumdatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets the "administrativeMetadata" element
          */
-        @Inject(optional=true) public void setAdministrativeMetadata(de.zib.museum.museumdat.AdministrativeMetadataDocument.AdministrativeMetadata administrativeMetadata)
+        public void setAdministrativeMetadata(de.zib.museum.museumdat.AdministrativeMetadataDocument.AdministrativeMetadata administrativeMetadata)
         {
             generatedSetterHelperImpl(administrativeMetadata, ADMINISTRATIVEMETADATA$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

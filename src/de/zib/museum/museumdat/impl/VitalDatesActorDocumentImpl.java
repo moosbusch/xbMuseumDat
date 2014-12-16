@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one vitalDatesActor(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class VitalDatesActorDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "vitalDatesActor" element
      */
-    @Inject(optional=true) public void setVitalDatesActor(de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor vitalDatesActor)
+    public void setVitalDatesActor(de.zib.museum.museumdat.VitalDatesActorDocument.VitalDatesActor vitalDatesActor)
     {
         generatedSetterHelperImpl(vitalDatesActor, VITALDATESACTOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -151,7 +151,7 @@ public class VitalDatesActorDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "birthDate" attribute
          */
-        @Inject(optional=true) public void setBirthDate(java.lang.String birthDate)
+        public void setBirthDate(java.lang.String birthDate)
         {
             synchronized (monitor())
             {
@@ -243,7 +243,7 @@ public class VitalDatesActorDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "deathDate" attribute
          */
-        @Inject(optional=true) public void setDeathDate(java.lang.String deathDate)
+        public void setDeathDate(java.lang.String deathDate)
         {
             synchronized (monitor())
             {
@@ -335,7 +335,7 @@ public class VitalDatesActorDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -427,7 +427,7 @@ public class VitalDatesActorDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "encodinganalog" attribute
          */
-        @Inject(optional=true) public void setEncodinganalog(java.lang.String encodinganalog)
+        public void setEncodinganalog(java.lang.String encodinganalog)
         {
             synchronized (monitor())
             {
@@ -519,7 +519,7 @@ public class VitalDatesActorDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "label" attribute
          */
-        @Inject(optional=true) public void setLabel(java.lang.String label)
+        public void setLabel(java.lang.String label)
         {
             synchronized (monitor())
             {
@@ -611,7 +611,7 @@ public class VitalDatesActorDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {

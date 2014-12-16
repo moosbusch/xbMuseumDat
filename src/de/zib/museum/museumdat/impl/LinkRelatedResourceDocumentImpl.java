@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one linkRelatedResource(@http://museum.zib.de/museumdat) element.
  *
@@ -53,7 +53,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "linkRelatedResource" element
      */
-    @Inject(optional=true) public void setLinkRelatedResource(de.zib.museum.museumdat.LinkRelatedResourceDocument.LinkRelatedResource linkRelatedResource)
+    public void setLinkRelatedResource(de.zib.museum.museumdat.LinkRelatedResourceDocument.LinkRelatedResource linkRelatedResource)
     {
         generatedSetterHelperImpl(linkRelatedResource, LINKRELATEDRESOURCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -126,7 +126,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "relatedResourceRelType" element
          */
-        @Inject(optional=true) public void setRelatedResourceRelType(de.zib.museum.museumdat.RelatedResourceRelTypeDocument.RelatedResourceRelType relatedResourceRelType)
+        public void setRelatedResourceRelType(de.zib.museum.museumdat.RelatedResourceRelTypeDocument.RelatedResourceRelType relatedResourceRelType)
         {
             generatedSetterHelperImpl(relatedResourceRelType, RELATEDRESOURCERELTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -252,7 +252,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets array of all "labelRelatedResource" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setLabelRelatedResourceArray(de.zib.museum.museumdat.LabelRelatedResourceDocument.LabelRelatedResource[] labelRelatedResourceArray)
+        public void setLabelRelatedResourceArray(de.zib.museum.museumdat.LabelRelatedResourceDocument.LabelRelatedResource[] labelRelatedResourceArray)
         {
             check_orphaned();
             arraySetterHelper(labelRelatedResourceArray, LABELRELATEDRESOURCE$2);
@@ -261,7 +261,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets ith "labelRelatedResource" element
          */
-        @Inject(optional=true) public void setLabelRelatedResourceArray(int i, de.zib.museum.museumdat.LabelRelatedResourceDocument.LabelRelatedResource labelRelatedResource)
+        public void setLabelRelatedResourceArray(int i, de.zib.museum.museumdat.LabelRelatedResourceDocument.LabelRelatedResource labelRelatedResource)
         {
             generatedSetterHelperImpl(labelRelatedResource, LABELRELATEDRESOURCE$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -353,7 +353,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "linkscheme" attribute
          */
-        @Inject(optional=true) public void setLinkscheme(java.lang.String linkscheme)
+        public void setLinkscheme(java.lang.String linkscheme)
         {
             synchronized (monitor())
             {

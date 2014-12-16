@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.zib.museum.museumdat.impl;  import com.google.inject.Inject;
+package de.zib.museum.museumdat.impl;  
 /**
  * A document containing one geographicalEntity(@http://museum.zib.de/museumdat) attribute.
  *
@@ -79,7 +79,7 @@ public class GeographicalEntityAttributeImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "geographicalEntity" attribute
      */
-    @Inject(optional=true) public void setGeographicalEntity(java.lang.String geographicalEntity)
+    public void setGeographicalEntity(java.lang.String geographicalEntity)
     {
         synchronized (monitor())
         {
